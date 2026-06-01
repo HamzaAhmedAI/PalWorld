@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "PalBreed.AI – Ultimate Palworld Breeding Calculator",
+  "alternateName": ["Palworld Breeding Calculator by PalBreed.AI", "PalBreed AI"],
+  "description": "AI-powered Palworld breeding calculator that finds shortest-path breeding combinations, calculates IV inheritance, and predicts passive skill inheritance chains for optimal breeding strategies.",
+  "operatingSystem": "Web",
+  "applicationCategory": "GameApplication",
+  "softwareCategory": "Productivity",
+  "url": "https://palbreedai.com",
+  "image": ["https://palbreedai.com/og-image.png"],
+  "author": {
+    "@type": "Organization",
+    "name": "PalBreed.AI Team",
+    "url": "https://palbreedai.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "PalBreed.AI",
+    "url": "https://palbreedai.com"
+  },
+  "datePublished": "2024-01-15",
+  "dateModified": "2026-06-01",
+  "version": "2.0",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "featureList": [
+    "Shortest path breeding combinations",
+    "IV inheritance calculation",
+    "Passive skill prediction",
+    "Breeding chain optimization",
+    "Real-time result updates",
+    "AI-powered breeding assistant"
+  ],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Gamers",
+    "description": "Palworld players looking to optimize their breeding strategies"
+  }
+}
