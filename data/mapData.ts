@@ -19,7 +19,8 @@ export type Biome =
   | 'coastal'
   | 'underground'
   | 'ice'
-  | 'ground';
+  | 'ground'
+  | 'sky';
 
 export interface Habitat {
   biome: Biome;
@@ -77,6 +78,19 @@ export const REGION_COORDINATES: Record<string, [number, number]> = {
   'Ruined Fortress City': [-8, -8],
   'Pilgrimage Church': [-3, -12],
   'Sealed Realm of the Swordmaster': [8, -18],
+
+  // Palworld 1.0 regions
+  'Sunreach': [25, -25],          // sky islands
+  'World Tree': [0, -30],         // towering World Tree
+  'Verdant Cradle': [12, 18],     // jungle island
+  'Ember Shoals': [18, -14],      // volcanic island
+  'Dune Refuge': [22, 10],        // desert island
+  'Ruin Hollow': [-18, 2],        // ruined island
+  'Frost Harbor': [-20, -22],     // frozen coastal island
+  'Glacier Reach': [-22, -16],    // glacier island
+  'Storm Cape': [-10, 22],        // coastal island
+  'Wildlife Sanctuary No. 4': [16, 14],
+  'Wildlife Sanctuary No. 5': [-22, 8],
 };
 
 // Biome colors for map visualization
@@ -97,6 +111,7 @@ export const BIOME_COLORS: Record<Biome, string> = {
   underground: '#7c3aed', // violet
   ice: '#bae6fd',         // light sky
   ground: '#92400e',      // brown
+  sky: '#818cf8',         // indigo (sky islands)
 };
 
 // Sample map data - assigning habitats to some Pals for demonstration
@@ -205,8 +220,9 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
     habitats: [
       { biome: 'snow', regionName: 'Frostbound Mountains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'snow', regionName: 'Astral Mountain', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
+      { biome: 'ruins', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] }
     ],
-    notableLocations: ['Frostbound Mountains', 'Astral Mountain']
+    notableLocations: ['Frostbound Mountains', 'Astral Mountain', 'World Tree']
   },
 
   // Blazehowl - Volcanic areas (example fire Pal)
@@ -1101,9 +1117,10 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
       { biome: 'mountain', regionName: 'Mount Obsidian', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'mountain', regionName: 'Astral Mountain', commonness: 'rare', timeOfDay: ['day', 'night'] },
       { biome: 'lake', regionName: 'East Lake', commonness: 'uncommon', timeOfDay: ['day'] },
-      { biome: 'lake', regionName: 'West Lake', commonness: 'uncommon', timeOfDay: ['day'] }
+      { biome: 'lake', regionName: 'West Lake', commonness: 'uncommon', timeOfDay: ['day'] },
+      { biome: 'volcanic', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] }
     ],
-    notableLocations: ['Mount Obsidian', 'Astral Mountain', 'East Lake', 'West Lake']
+    notableLocations: ['Mount Obsidian', 'Astral Mountain', 'East Lake', 'West Lake', 'World Tree']
   },
 
   // Suzaku (102) - Fire areas (rarity 8)
@@ -1499,9 +1516,10 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   "136": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'very rare', timeOfDay: ['night'] },
-      { biome: 'forest', regionName: 'Ancient Forest', commonness: 'very rare', timeOfDay: ['night'] }
+      { biome: 'forest', regionName: 'Ancient Forest', commonness: 'very rare', timeOfDay: ['night'] },
+      { biome: 'forest', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] }
     ],
-    notableLocations: ['Whispering Woods', 'Ancient Forest']
+    notableLocations: ['Whispering Woods', 'Ancient Forest', 'World Tree']
   },
 
   // Frostallion Noct (137) - Dark areas (based on Frostallion)
@@ -1513,6 +1531,147 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
       { biome: 'mountain', regionName: 'Mount Obsidian', commonness: 'very rare', timeOfDay: ['day'] }
     ],
     notableLocations: ['Frostbound Mountains', 'Astral Mountain', 'Mount Obsidian']
+  },
+
+  // --- Palworld 1.0 regions (Sunreach sky islands) ---
+  "138": {
+    habitats: [
+      { biome: 'sky', regionName: 'Sunreach', commonness: 'very rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['Sunreach']
+  },
+  "145": {
+    habitats: [
+      { biome: 'sky', regionName: 'Sunreach', commonness: 'rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['Sunreach']
+  },
+  "148": {
+    habitats: [
+      { biome: 'sky', regionName: 'Sunreach', commonness: 'rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['Sunreach']
+  },
+  "151": {
+    habitats: [
+      { biome: 'sky', regionName: 'Sunreach', commonness: 'rare', timeOfDay: ['day'] },
+    ],
+    notableLocations: ['Sunreach']
+  },
+  "152": {
+    habitats: [
+      { biome: 'sky', regionName: 'Sunreach', commonness: 'very rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['Sunreach']
+  },
+
+  // --- Palworld 1.0 — World Tree (pals.ts habitats are ignored by getPalMapData) ---
+  // 101/109/136 already have sample entries above; their World Tree spawn was appended there.
+  "177": {
+    habitats: [
+      { biome: 'river', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['World Tree']
+  },
+  "183": {
+    habitats: [
+      { biome: 'mountain', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['World Tree']
+  },
+  "203": {
+    habitats: [
+      { biome: 'mountain', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['World Tree']
+  },
+  "204": {
+    habitats: [
+      { biome: 'forest', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['World Tree']
+  },
+  "206": {
+    habitats: [
+      { biome: 'ruins', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['World Tree']
+  },
+  "207": {
+    habitats: [
+      { biome: 'volcanic', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['World Tree']
+  },
+  "209": {
+    habitats: [
+      { biome: 'mountain', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['World Tree']
+  },
+  "210": {
+    habitats: [
+      { biome: 'volcanic', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['World Tree']
+  },
+
+  // --- Palworld 1.0 new islands ---
+  "193": {
+    habitats: [
+      { biome: 'jungle', regionName: 'Verdant Cradle', commonness: 'common', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['Verdant Cradle']
+  },
+  "198": {
+    habitats: [
+      { biome: 'volcanic', regionName: 'Ember Shoals', commonness: 'common', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['Ember Shoals']
+  },
+  "194": {
+    habitats: [
+      { biome: 'desert', regionName: 'Dune Refuge', commonness: 'common', timeOfDay: ['day'] },
+    ],
+    notableLocations: ['Dune Refuge']
+  },
+  "196": {
+    habitats: [
+      { biome: 'ruins', regionName: 'Ruin Hollow', commonness: 'common', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['Ruin Hollow']
+  },
+  "200": {
+    habitats: [
+      { biome: 'ice', regionName: 'Frost Harbor', commonness: 'common', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['Frost Harbor']
+  },
+  "197": {
+    habitats: [
+      { biome: 'ice', regionName: 'Glacier Reach', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['Glacier Reach']
+  },
+  "202": {
+    habitats: [
+      { biome: 'coastal', regionName: 'Storm Cape', commonness: 'common', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['Storm Cape']
+  },
+
+  // --- Reworked Wildlife Sanctuaries ---
+  "199": {
+    habitats: [
+      { biome: 'mountain', regionName: 'Wildlife Sanctuary No. 4', commonness: 'very rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['Wildlife Sanctuary No. 4']
+  },
+  "208": {
+    habitats: [
+      { biome: 'mountain', regionName: 'Wildlife Sanctuary No. 5', commonness: 'very rare', timeOfDay: ['day', 'night'] },
+    ],
+    notableLocations: ['Wildlife Sanctuary No. 5']
   }
 };
 

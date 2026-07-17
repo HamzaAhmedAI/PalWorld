@@ -25,6 +25,7 @@ const BIOME_META: Record<string, { color: string; glow: string; icon: string; la
   underground: { color: '#7c3aed', glow: 'rgba(124,58,237,0.35)',   icon: '🕳️', label: 'Underground' },
   ice:         { color: '#bae6fd', glow: 'rgba(186,230,253,0.35)',  icon: '🧊', label: 'Ice'         },
   ground:      { color: '#92400e', glow: 'rgba(146,64,14,0.35)',    icon: '🪨', label: 'Ground'      },
+  sky:         { color: '#818cf8', glow: 'rgba(129,140,248,0.35)',  icon: '🌤️', label: 'Sky'         },
 };
 
 const COMMONNESS_BADGE: Record<string, { label: string; color: string }> = {

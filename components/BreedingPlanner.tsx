@@ -1,12 +1,20 @@
 'use client';
 
 import { useState, useMemo } from "react";
-import { PALS } from "@/data/pals";
-import { getResultingPal, findBreedingPaths } from "@/lib/breeding";
+import { PALS, type Pal } from "@/data/pals";
+import {
+  getResultingPal,
+  findBreedingPaths,
+  type BreedingPath,
+} from "@/lib/breeding";
 import { PalCard } from "./PalCard";
 import { Search, ArrowRight, Zap, Activity, Dna, Shield, Swords } from "lucide-react";
 import { SafeImage } from "./SafeImage";
 import { PASSIVE_SKILLS, PassiveSkill } from "@/data/skills";
+import { usePalbox } from "./PalboxProvider";
+import { PalboxToggle } from "./PalboxToggle";
+import { ParentSidebar } from "./ParentSidebar";
+import { BreedingTreeSVG } from "./BreedingTreeSVG";
 
 export function BreedingPlanner() {
   const [parentA, setParentA] = useState(PALS[0]);
@@ -14,6 +22,12 @@ export function BreedingPlanner() {
   const [targetPal, setTargetPal] = useState(PALS[0]);
   const [search, setSearch] = useState("");
   const [mode, setMode] = useState<'calculator' | 'pathfinder' | 'iv'>('calculator');
+
+  // Phase 3 — Palbox + pathfinder filtering
+  const { isOwned, clearOwned } = usePalbox();
+  const [filterOwned, setFilterOwned] = useState(false);
+  const [selectedParents, setSelectedParents] = useState<Set<string>>(new Set());
+  const [resultsView, setResultsView] = useState<'list' | 'tree'>('list');
 
   // Passive Skills
   const [parentASkills, setParentASkills] = useState<string[]>([]);
@@ -31,6 +45,59 @@ export function BreedingPlanner() {
 
   const result = useMemo(() => getResultingPal(parentA, parentB), [parentA, parentB]);
   const paths = useMemo(() => findBreedingPaths(targetPal), [targetPal]);
+
+  // Distinct parent Pals across all paths (for the sidebar checkboxes).
+  const distinctParents = useMemo(() => {
+    const map = new Map<string, Pal>();
+    for (const path of paths) {
+      for (const step of path.steps) {
+        map.set(step.parentA.id, step.parentA);
+        map.set(step.parentB.id, step.parentB);
+      }
+    }
+    return Array.from(map.values()).sort((a, b) => a.name.localeCompare(b.name));
+  }, [paths]);
+
+  // The "base" Pals you must actually own to start a path = parents that never
+  // appear as a step result (they are not themselves bred from something else).
+  const leafParentsOf = (path: BreedingPath): Pal[] => {
+    const results = new Set(path.steps.map((s) => s.result.id));
+    const leaves: Pal[] = [];
+    for (const s of path.steps) {
+      if (!results.has(s.parentA.id)) leaves.push(s.parentA);
+      if (!results.has(s.parentB.id)) leaves.push(s.parentB);
+    }
+    return leaves;
+  };
+
+  // Apply the "Filter by Owned" and per-parent sidebar filters.
+  const filteredPaths = useMemo(() => {
+    return paths.filter((path) => {
+      if (filterOwned) {
+        const leaves = leafParentsOf(path);
+        if (!leaves.every((p) => isOwned(p.id))) return false;
+      }
+      if (selectedParents.size > 0) {
+        const parentIds = new Set<string>();
+        for (const s of path.steps) {
+          parentIds.add(s.parentA.id);
+          parentIds.add(s.parentB.id);
+        }
+        for (const id of selectedParents) {
+          if (!parentIds.has(id)) return false;
+        }
+      }
+      return true;
+    });
+  }, [paths, filterOwned, selectedParents, isOwned]);
+
+  const toggleParent = (id: string) =>
+    setSelectedParents((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
 
   const inheritedSkills = useMemo(() => {
     const allIds = Array.from(new Set([...parentASkills, ...parentBSkills]));
@@ -210,45 +277,151 @@ export function BreedingPlanner() {
               <PalCard pal={targetPal} size="lg" className="border-indigo-500/50 shadow-[0_0_50px_rgba(99,102,241,0.1)] dark:shadow-[0_0_50px_rgba(99,102,241,0.2)]" />
             </div>
 
-            <div className="w-full space-y-8">
-              <h3 className="text-2xl font-black text-slate-900 dark:text-white text-center tracking-tight">Top Breeding Combinations</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {paths.filter(p => p.steps && p.steps.length > 0).slice(0, 6).map((path, idx) => (
-                  <div
-                    key={idx}
-                    className="bp-path-card bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/5 p-4 sm:p-6 rounded-2xl sm:rounded-[2rem] flex flex-col gap-4 hover:border-indigo-500/30 transition-all hover:bg-slate-100 dark:hover:bg-white/10 shadow-sm dark:shadow-none"
+            <div className="flex flex-col items-start gap-6 lg:flex-row">
+              <ParentSidebar
+                parents={distinctParents}
+                selected={selectedParents}
+                onToggle={toggleParent}
+                onClear={() => setSelectedParents(new Set())}
+              />
+
+              <div className="min-w-0 flex-1 space-y-6">
+                {/* Controls */}
+                <div className="flex flex-wrap items-center gap-3">
+                  <button
+                    type="button"
+                    onClick={() => setFilterOwned((v) => !v)}
+                    aria-pressed={filterOwned}
+                    className={`rounded-xl border px-3 py-2 text-xs font-bold transition-all ${
+                      filterOwned
+                        ? "border-emerald-500/40 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400"
+                        : "border-slate-200 bg-white text-slate-500 hover:text-indigo-600 dark:border-white/10 dark:bg-white/5"
+                    }`}
                   >
-                    {path.steps.map((step, stepIdx) => (
-                      <div key={stepIdx} className="flex flex-col">
-                        {stepIdx > 0 && <div className="flex justify-center my-2"><ArrowRight className="text-indigo-500/50 w-5 h-5 rotate-90" /></div>}
-                        <div className="flex items-center justify-between gap-4">
-                          <div className="flex items-center gap-2 md:gap-4">
-                            <div className="text-center group">
-                              <div className="relative p-1">
-                                <div className="absolute inset-0 bg-indigo-500/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                <SafeImage src={step.parentA.image} alt={step.parentA.name} width={48} height={48} className="rounded-2xl bg-white dark:bg-black/40 border border-slate-200 dark:border-white/5 relative z-10 shadow-sm dark:shadow-none" />
+                    {filterOwned ? "Owned: On" : "Filter by Owned"}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={clearOwned}
+                    className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-bold text-slate-400 transition-all hover:text-indigo-600 dark:border-white/10 dark:bg-white/5"
+                  >
+                    Reset Box
+                  </button>
+                  <div className="ml-auto flex gap-1 rounded-xl border border-slate-200 bg-slate-100 p-1 dark:border-white/10 dark:bg-white/5">
+                    <button
+                      type="button"
+                      onClick={() => setResultsView("list")}
+                      className={`rounded-lg px-3 py-1.5 text-xs font-bold transition-all ${
+                        resultsView === "list"
+                          ? "bg-white text-indigo-600 shadow dark:bg-white/10 dark:text-indigo-300"
+                          : "text-slate-500"
+                      }`}
+                    >
+                      List
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setResultsView("tree")}
+                      className={`rounded-lg px-3 py-1.5 text-xs font-bold transition-all ${
+                        resultsView === "tree"
+                          ? "bg-white text-indigo-600 shadow dark:bg-white/10 dark:text-indigo-300"
+                          : "text-slate-500"
+                      }`}
+                    >
+                      Tree
+                    </button>
+                  </div>
+                </div>
+
+                {selectedParents.size > 0 && (
+                  <p className="text-xs text-slate-500">
+                    Showing paths using {selectedParents.size} selected parent
+                    {selectedParents.size > 1 ? "s" : ""}.{" "}
+                    <button
+                      type="button"
+                      onClick={() => setSelectedParents(new Set())}
+                      className="font-bold text-indigo-600 hover:underline"
+                    >
+                      Show all combinations
+                    </button>
+                  </p>
+                )}
+
+                <h3 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">
+                  Top Breeding Combinations
+                </h3>
+
+                {filteredPaths.length === 0 ? (
+                  <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50 p-10 text-center text-sm text-slate-500 dark:border-white/10 dark:bg-white/5">
+                    No combinations match your filters. Try clearing the selected
+                    parents or turning off “Filter by Owned”.
+                  </div>
+                ) : resultsView === "list" ? (
+                  <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                    {filteredPaths.slice(0, 8).map((path, idx) => {
+                      const leaves = new Set(
+                        leafParentsOf(path).map((p) => p.id),
+                      );
+                      return (
+                        <div
+                          key={idx}
+                          className="bp-path-card bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/5 p-4 sm:p-6 rounded-2xl sm:rounded-[2rem] flex flex-col gap-4 hover:border-indigo-500/30 transition-all hover:bg-slate-100 dark:hover:bg-white/10 shadow-sm dark:shadow-none"
+                        >
+                          {path.steps.map((step, stepIdx) => (
+                            <div key={stepIdx} className="flex flex-col">
+                              {stepIdx > 0 && (
+                                <div className="flex justify-center my-2">
+                                  <ArrowRight className="text-indigo-500/50 w-5 h-5 rotate-90" />
+                                </div>
+                              )}
+                              <div className="flex items-center justify-between gap-4">
+                                <div className="flex items-center gap-2 md:gap-4">
+                                  <div className="text-center group">
+                                    <div className="relative p-1">
+                                      <div className="absolute inset-0 bg-indigo-500/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                      <SafeImage src={step.parentA.image} alt={step.parentA.name} width={48} height={48} className="rounded-2xl bg-white dark:bg-black/40 border border-slate-200 dark:border-white/5 relative z-10 shadow-sm dark:shadow-none" />
+                                    </div>
+                                    <div className="text-[9px] font-black text-slate-500 mt-1 max-w-[48px] truncate uppercase tracking-tighter">{step.parentA.name}</div>
+                                    {leaves.has(step.parentA.id) && (
+                                      <PalboxToggle pal={step.parentA} className="mt-1" />
+                                    )}
+                                  </div>
+                                  <span className="text-indigo-500/40 font-black text-lg">+</span>
+                                  <div className="text-center group">
+                                    <div className="relative p-1">
+                                      <div className="absolute inset-0 bg-indigo-500/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                      <SafeImage src={step.parentB.image} alt={step.parentB.name} width={48} height={48} className="rounded-2xl bg-white dark:bg-black/40 border border-slate-200 dark:border-white/5 relative z-10 shadow-sm dark:shadow-none" />
+                                    </div>
+                                    <div className="text-[9px] font-black text-slate-500 mt-1 max-w-[48px] truncate uppercase tracking-tighter">{step.parentB.name}</div>
+                                    {leaves.has(step.parentB.id) && (
+                                      <PalboxToggle pal={step.parentB} className="mt-1" />
+                                    )}
+                                  </div>
+                                </div>
+                                <ArrowRight className="text-slate-300 dark:text-slate-800 w-5 h-5 flex-shrink-0" />
+                                <div className="text-center bg-indigo-500/5 dark:bg-indigo-500/10 p-3 rounded-3xl border border-indigo-500/10 dark:border-indigo-500/20">
+                                  <SafeImage src={step.result.image} alt={step.result.name} width={56} height={56} className="rounded-xl drop-shadow-xl dark:drop-shadow-2xl" />
+                                  <div className="text-[9px] font-black text-indigo-600 dark:text-indigo-400 mt-2 uppercase tracking-widest">{step.result.name}</div>
+                                </div>
                               </div>
-                              <div className="text-[9px] font-black text-slate-500 mt-1 max-w-[48px] truncate uppercase tracking-tighter">{step.parentA.name}</div>
                             </div>
-                            <span className="text-indigo-500/40 font-black text-lg">+</span>
-                            <div className="text-center group">
-                              <div className="relative p-1">
-                                <div className="absolute inset-0 bg-indigo-500/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                <SafeImage src={step.parentB.image} alt={step.parentB.name} width={48} height={48} className="rounded-2xl bg-white dark:bg-black/40 border border-slate-200 dark:border-white/5 relative z-10 shadow-sm dark:shadow-none" />
-                              </div>
-                              <div className="text-[9px] font-black text-slate-500 mt-1 max-w-[48px] truncate uppercase tracking-tighter">{step.parentB.name}</div>
-                            </div>
-                          </div>
-                          <ArrowRight className="text-slate-300 dark:text-slate-800 w-5 h-5 flex-shrink-0" />
-                          <div className="text-center bg-indigo-500/5 dark:bg-indigo-500/10 p-3 rounded-3xl border border-indigo-500/10 dark:border-indigo-500/20">
-                            <SafeImage src={step.result.image} alt={step.result.name} width={56} height={56} className="rounded-xl drop-shadow-xl dark:drop-shadow-2xl" />
-                            <div className="text-[9px] font-black text-indigo-600 dark:text-indigo-400 mt-2 uppercase tracking-widest">{step.result.name}</div>
-                          </div>
+                          ))}
                         </div>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+                    {filteredPaths.slice(0, 8).map((path, idx) => (
+                      <div
+                        key={idx}
+                        className="rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-white/5 dark:bg-white/5"
+                      >
+                        <BreedingTreeSVG path={path} />
                       </div>
                     ))}
                   </div>
-                ))}
+                )}
               </div>
             </div>
           </div>

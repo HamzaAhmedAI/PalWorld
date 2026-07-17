@@ -1,6 +1,7 @@
 'use client';
 
 import { BreedingPlanner } from "@/components/BreedingPlanner";
+import { PalboxProvider } from "@/components/PalboxProvider";
 import { AIChatAssistant } from "@/components/AIChatAssistant";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Sparkles, Info, Github, Globe, Menu, X } from "lucide-react";
@@ -120,7 +121,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <BreedingPlanner />
+        <PalboxProvider>
+          <BreedingPlanner />
+        </PalboxProvider>
       </section>
 
       {/* Advanced Features Section */}
@@ -187,6 +190,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 1.0 Guides */}
+      <section className="py-20 bg-white dark:bg-[#050505]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 text-center">
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-4">Master Palworld 1.0</h2>
+            <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+              Deep-dive guides for the 1.0 endgame: mutation breeding, Lv 10 work suitability,
+              World Tree awakening, and the god-roll passive builds.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { href: "/guides/mutation", title: "Mutation Breeding", blurb: "Cakes, recipes & rainbow passives." },
+              { href: "/guides/work-suitability", title: "Work Suitability Lv 10", blurb: "Condense-to-48 & best workers." },
+              { href: "/guides/awakening", title: "Awakening", blurb: "Radiant Gems & World Tree passives." },
+              { href: "/guides/combat-passives", title: "Combat & Worker Passives", blurb: "S-Tier passive builds." },
+            ].map((g) => (
+              <a
+                key={g.href}
+                href={g.href}
+                className="group rounded-2xl border border-slate-200 bg-slate-50 dark:bg-white/5 dark:border-white/10 p-6 transition-all hover:border-indigo-500/40"
+              >
+                <h3 className="text-lg font-black text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                  {g.title}
+                </h3>
+                <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">{g.blurb}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-indigo-500/10 dark:border-white/5 py-16 bg-slate-50 dark:bg-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -203,6 +238,7 @@ export default function Home() {
                 <ul className="space-y-2 text-slate-500">
                   <li><a href="#calculator" className="hover:text-indigo-600 transition-colors">Calculator</a></li>
                   <li><a href="/pals" className="hover:text-indigo-600 transition-colors">Paldex</a></li>
+                  <li><a href="/guides" className="hover:text-indigo-600 transition-colors">1.0 Guides</a></li>
                   <li><a href="/map" className="hover:text-indigo-600 transition-colors">World Map</a></li>
                 </ul>
               </div>

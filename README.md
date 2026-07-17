@@ -2,7 +2,7 @@
 
 **A professional-grade breeding calculator and assistant for Palworld**, designed to help players optimize their Paldeck through precise calculations and AI-driven insights.
 
-![Version](https://img.shields.io/badge/version-0.1.0-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![Language](https://img.shields.io/badge/language-TypeScript-blue)
 ![Framework](https://img.shields.io/badge/framework-Next.js_15-black)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -251,7 +251,7 @@ This project is open source and available under the MIT License.
 ## 🎯 Project Info
 
 - **Created**: May 3, 2026
-- **Last Updated**: June 1, 2026
+- **Last Updated**: July 10, 2026
 - **Repository Size**: 1.07 MB
 - **Language**: TypeScript
 - **Author**: [@HamzaAhmedAI](https://github.com/HamzaAhmedAI)

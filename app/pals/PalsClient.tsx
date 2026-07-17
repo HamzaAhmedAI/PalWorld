@@ -3,6 +3,8 @@
 import { PALS, Pal } from "@/data/pals";
 import { PalCard } from "@/components/PalCard";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { getPalSlug } from "@/lib/palSlug";
+import Link from "next/link";
 import { Search, ArrowLeft, Grid, List, Sparkles, Filter, SlidersHorizontal, Star, Globe, Menu, X } from "lucide-react";
 import { useState, useMemo } from "react";
 
@@ -64,6 +66,10 @@ export default function PalsPageClient() {
                   <div className="bg-indigo-500/10 p-1.5 rounded-lg text-indigo-600"><List size={16} /></div>
                   Paldex Explorer
                 </a>
+                <a href="/guides" className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-white/5 hover:text-indigo-600 dark:hover:text-white transition-colors">
+                  <div className="bg-indigo-500/10 p-1.5 rounded-lg text-indigo-600"><Sparkles size={16} /></div>
+                  1.0 Guides
+                </a>
                 <a href="/map" className="flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-indigo-50 dark:hover:bg-white/5 hover:text-indigo-600 dark:hover:text-white transition-colors">
                   <div className="bg-indigo-500/10 p-1.5 rounded-lg text-indigo-600"><Globe size={16} /></div>
                   World Habitat Map
@@ -88,6 +94,9 @@ export default function PalsPageClient() {
             </a>
             <a href="/pals" className="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-50 dark:bg-white/5 text-sm font-bold text-slate-600 dark:text-slate-300">
               <List size={18} className="text-indigo-500" /> Paldex Explorer
+            </a>
+            <a href="/guides" className="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-50 dark:bg-white/5 text-sm font-bold text-slate-600 dark:text-slate-300">
+              <Sparkles size={18} className="text-indigo-500" /> 1.0 Guides
             </a>
             <a href="/map" className="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-50 dark:bg-white/5 text-sm font-bold text-slate-600 dark:text-slate-300">
               <Globe size={18} className="text-indigo-500" /> World Habitat Map
@@ -172,27 +181,28 @@ export default function PalsPageClient() {
         {viewMode === 'grid' ? (
           <div className="pal-grid-enter grid gap-4 sm:gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
             {filteredPals.map(pal => (
-              <div key={pal.id} className="flex flex-col items-center">
+              <Link key={pal.id} href={`/pals/${getPalSlug(pal)}`} className="flex flex-col items-center group">
                 <PalCard
                   pal={pal}
                   size="md"
                 />
                 <div className="mt-2 sm:mt-3 text-center">
-                  <h3 className="font-bold text-slate-900 dark:text-white text-sm sm:text-lg">{pal.name}</h3>
+                  <h3 className="font-bold text-slate-900 text-sm sm:text-lg transition-colors group-hover:text-indigo-600 dark:text-white dark:group-hover:text-indigo-400">{pal.name}</h3>
                   <div className="flex items-center justify-center gap-1 mt-1 text-amber-500">
                     {Array.from({ length: pal.rarity }).map((_, i) => (
                       <Star key={i} size={12} fill="currentColor" />
                     ))}
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         ) : (
           <div className="pal-grid-enter space-y-2 sm:space-y-3">
             {filteredPals.map(pal => (
-              <div
+              <Link
                 key={pal.id}
+                href={`/pals/${getPalSlug(pal)}`}
                 className="flex items-center gap-3 sm:gap-4 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 p-2 sm:p-3 rounded-xl sm:rounded-2xl hover:bg-slate-100 dark:hover:bg-white/10 transition-all group"
               >
                   <div className="w-16 h-16 bg-white dark:bg-black/20 rounded-xl flex items-center justify-center p-2 border border-slate-200 dark:border-white/10 group-hover:scale-110 transition-transform">
@@ -224,10 +234,10 @@ export default function PalsPageClient() {
                     </div>
                     <p className="text-xs font-bold text-slate-400">Rarity Tier {pal.rarity}</p>
                   </div>
-                  <button className="p-2 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 opacity-0 group-hover:opacity-100 transition-all">
+                  <span className="p-2 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 opacity-0 transition-all group-hover:opacity-100">
                     <ArrowLeft className="rotate-180" size={18} />
-                  </button>
-              </div>
+                  </span>
+              </Link>
             ))}
           </div>
         )}

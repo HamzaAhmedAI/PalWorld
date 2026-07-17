@@ -1,6 +1,10 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
+  // Silences the "multiple lockfiles / inferred workspace root" warning (a stray
+  // package-lock.json in the user home dir made Next pick the wrong root, which
+  // previously pushed the dev server off port 3000).
+  outputFileTracingRoot: process.cwd(),
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
