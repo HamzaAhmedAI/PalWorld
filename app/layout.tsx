@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: '%s | PalBreed.AI',
     default: 'PalBreed.AI - Ultimate Palworld Breeding Calculator 2026'
   },
-  description: 'The most accurate Palworld breeding calculator updated for 2026. Find shortest path combinations, IV breeding calculations, and passive skill inheritance chains with our AI-powered tool.',
+  description: 'The most accurate Palworld breeding calculator updated for 2026. Find shortest path combinations, IV breeding calculations, and passive skill inheritance chains with our AI-powered[...]',
   keywords: [
     'palworld breeding calculator updated',
     'palworld breeding calculator shortest path',
@@ -160,7 +160,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#1a1a1a" />
 
         {/* Critical CSS inlined to eliminate render-blocking stylesheet */}
         <style dangerouslySetInnerHTML={{ __html: `
@@ -169,7 +169,22 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           html{scroll-behavior:smooth}
           img{max-width:100%;height:auto}
           .antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+          html.dark{color-scheme:dark}
         `}} />
+
+        {/* Prevent flash: set dark mode immediately */}
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            try {
+              const isDark = localStorage.getItem('theme') === 'dark' || 
+                             (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches) ||
+                             !localStorage.getItem('theme');
+              if (isDark) {
+                document.documentElement.classList.add('dark');
+              }
+            } catch (e) {}
+          `
+        }} />
 
         {/* Google Analytics 4 - deferred */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-P7MFFVZJ94" strategy="afterInteractive" />
@@ -196,8 +211,8 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       </head>
-      <body className="antialiased">
-        <ThemeProvider attribute="class" defaultTheme="light" disableTransitionOnChange>
+      <body className="antialiased dark">
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={true} disableTransitionOnChange>
           {children}
         </ThemeProvider>
       </body>
