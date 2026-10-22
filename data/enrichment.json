@@ -1,0 +1,3324 @@
+{
+ "Blazamut": {
+  "partnerSkill": "Can be ridden. Enchances Fire attacks while mounted.",
+  "drops": [
+   {
+    "item": "coal",
+    "probability": 1
+   },
+   {
+    "item": "flame_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Pupperai": {
+  "drops": [
+   {
+    "item": "pupperai_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "volcanic",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Suzaku Aqua": {
+  "partnerSkill": "Can be ridden as a flying mount. Enhances Water attacks while mounted.",
+  "drops": [
+   {
+    "item": "pal_fluids",
+    "probability": 1
+   }
+  ]
+ },
+ "Clovee": {
+  "drops": [
+   {
+    "item": "clovee_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "forest",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Suzaku": {
+  "partnerSkill": "Can be ridden as a flying mount. Enhances Fire attacks while mounted.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Shadowbeak": {
+  "partnerSkill": "Can be ridden as a flying mount. Enhances Dark attacks while mounted.",
+  "drops": [
+   {
+    "item": "pal_metal_ingot",
+    "probability": 1
+   },
+   {
+    "item": "carbon_fiber",
+    "probability": 1
+   },
+   {
+    "item": "innovative_technical_manual",
+    "probability": 1
+   }
+  ]
+ },
+ "Necromus": {
+  "partnerSkill": "Can be ridden. Can double jump while mounted.",
+  "drops": [
+   {
+    "item": "pal_metal_ingot",
+    "probability": 1
+   },
+   {
+    "item": "large_pal_soul",
+    "probability": 1
+   }
+  ]
+ },
+ "Amione": {
+  "drops": [
+   {
+    "item": "amione_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "grassland",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Paladius": {
+  "partnerSkill": "Can be ridden. Can triple jump while mounted.",
+  "drops": [
+   {
+    "item": "pal_metal_ingot",
+    "probability": 1
+   },
+   {
+    "item": "diamond",
+    "probability": 1
+   }
+  ]
+ },
+ "Jetragon": {
+  "partnerSkill": "Can be ridden as a flying mount. Can rapidly fire a missile launcher while mounted.",
+  "drops": [
+   {
+    "item": "pure_quartz",
+    "probability": 1
+   },
+   {
+    "item": "polymer",
+    "probability": 1
+   },
+   {
+    "item": "carbon_fiber",
+    "probability": 1
+   },
+   {
+    "item": "diamond",
+    "probability": 1
+   }
+  ]
+ },
+ "Frostallion Noct": {
+  "partnerSkill": "Can be ridden as a flying mount. Changes the player's attack type to Dark and enhances Dark attacks while mounted.",
+  "drops": [
+   {
+    "item": "pure_quartz",
+    "probability": 1
+   },
+   {
+    "item": "large_pal_soul",
+    "probability": 1
+   }
+  ]
+ },
+ "Wispaw": {
+  "drops": [
+   {
+    "item": "wispaw_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "volcanic",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, increases the capture rate when awarded a back bonus . (Does not stack)"
+ },
+ "Frostallion": {
+  "partnerSkill": "Can be ridden as a flying mount. Changes the player's attack type to Ice and enhances Ice attacks while mounted.",
+  "drops": [
+   {
+    "item": "ice_organ",
+    "probability": 1
+   },
+   {
+    "item": "diamond",
+    "probability": 1
+   }
+  ]
+ },
+ "Cryolinx": {
+  "partnerSkill": "While fighting together, Dragon Pals drop more items when defeated.",
+  "drops": [
+   {
+    "item": "ice_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Muffly": {
+  "drops": [
+   {
+    "item": "muffly_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "forest",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Orserk": {
+  "partnerSkill": "While fighting together, Water Pals drop more items when defeated.",
+  "drops": [
+   {
+    "item": "electric_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Astegon": {
+  "partnerSkill": "Can be ridden a flying mount. Increases damage dealt to ore while mounted.",
+  "drops": [
+   {
+    "item": "pal_metal_ingot",
+    "probability": 1
+   },
+   {
+    "item": "pure_quartz",
+    "probability": 1
+   }
+  ]
+ },
+ "Puffolt": {
+  "drops": [
+   {
+    "item": "puffolt_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "mountain",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While at a base, increases the Generating Electricity"
+ },
+ "Helzephyr": {
+  "partnerSkill": "Can be ridden as a flying mount. Applies Dark damage to the player's attacks while mounted.",
+  "drops": [
+   {
+    "item": "venom_gland",
+    "probability": 1
+   },
+   {
+    "item": "medium_pal_soul",
+    "probability": 1
+   }
+  ]
+ },
+ "Elgrove": {
+  "drops": [
+   {
+    "item": "elgrove_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "forest",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Grizzbolt": {
+  "partnerSkill": "Can be ridden. Can rapidly fire a minigun while mounted.",
+  "drops": [
+   {
+    "item": "electric_organ",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   }
+  ]
+ },
+ "Lyleen Noct": {
+  "partnerSkill": "When activated, the queen's soothing graces greatly restore the player's HP.",
+  "drops": [
+   {
+    "item": "low_grade_medical_supplies",
+    "probability": 1
+   },
+   {
+    "item": "beautiful_flower",
+    "probability": 1
+   },
+   {
+    "item": "innovative_technical_manual",
+    "probability": 1
+   }
+  ]
+ },
+ "Beakon": {
+  "partnerSkill": "Can be ridden as a flying mount. Applies Electric damage to the player's attacks while mounted.",
+  "drops": [
+   {
+    "item": "electric_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Leafan": {
+  "drops": [
+   {
+    "item": "leafan_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "forest",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "This Pal's Attack and Defense increase by (2~6)% for each other Grass Pal in your party."
+ },
+ "Beakon Cryst": {
+  "drops": [
+   {
+    "item": "beakon_cryst_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "snow",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Reptyro Cryst": {
+  "partnerSkill": "Can be ridden. Improves efficiency of mining ores while mounted.",
+  "drops": [
+   {
+    "item": "ice_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Pyrin Noct": {
+  "partnerSkill": "Can be ridden. Applies Dark damage to the player's attacks while mounted.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   }
+  ]
+ },
+ "Lyleen": {
+  "partnerSkill": "When activated, the queen's soothing graces greatly restore the player's HP.",
+  "drops": [
+   {
+    "item": "low_grade_medical_supplies",
+    "probability": 1
+   },
+   {
+    "item": "beautiful_flower",
+    "probability": 1
+   },
+   {
+    "item": "innovative_technical_manual",
+    "probability": 1
+   }
+  ]
+ },
+ "Needoll": {
+  "drops": [
+   {
+    "item": "needoll_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "ruins",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Menasting": {
+  "partnerSkill": "When fighting together, increases the player's defense and Electric Pals drop more items when defeated.",
+  "drops": [
+   {
+    "item": "coal",
+    "probability": 1
+   },
+   {
+    "item": "venom_gland",
+    "probability": 1
+   }
+  ]
+ },
+ "Relaxaurus Lux": {
+  "partnerSkill": "Can be ridden. Can rapidly fire a missile launcher while mounted.",
+  "drops": [
+   {
+    "item": "high_quality_pal_oil",
+    "probability": 1
+   },
+   {
+    "item": "electric_organ",
+    "probability": 1
+   },
+   {
+    "item": "sapphire",
+    "probability": 1
+   }
+  ]
+ },
+ "Relaxaurus": {
+  "partnerSkill": "Can be ridden. Can rapidly fire a missile launcher while mounted.",
+  "drops": [
+   {
+    "item": "high_quality_pal_oil",
+    "probability": 1
+   },
+   {
+    "item": "ruby",
+    "probability": 1
+   }
+  ]
+ },
+ "Moldron": {
+  "drops": [
+   {
+    "item": "moldron_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "canyon",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Mammorest Cryst": {
+  "partnerSkill": "Can be ridden. Improves efficiency of cutting trees and mining ores while mounted.",
+  "drops": [
+   {
+    "item": "high_quality_pal_oil",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "mammorest_meat",
+    "probability": 1
+   }
+  ]
+ },
+ "Mammorest": {
+  "partnerSkill": "Can be ridden. Improves efficiency of cutting trees and mining ores while mounted.",
+  "drops": [
+   {
+    "item": "high_quality_pal_oil",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "mammorest_meat",
+    "probability": 1
+   }
+  ]
+ },
+ "Jormuntide": {
+  "partnerSkill": "Can be ridden to travel on water. While mounted, prevents stamina depletion while moving over water.",
+  "drops": [
+   {
+    "item": "pal_fluids",
+    "probability": 1
+   }
+  ]
+ },
+ "Jormuntide Ignis": {
+  "partnerSkill": "Can be ridden. Enhances Fire attacks while mounted.",
+  "drops": [
+   {
+    "item": "high_quality_pal_oil",
+    "probability": 1
+   },
+   {
+    "item": "flame_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Majex": {
+  "drops": [
+   {
+    "item": "majex_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "mountain",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Reptyro": {
+  "partnerSkill": "Can be ridden. Improves efficiency of mining ores while mounted.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Elizabee": {
+  "partnerSkill": "While fighting together, stats will increase the more Beegarde are in your team.",
+  "drops": [
+   {
+    "item": "honey",
+    "probability": 1
+   },
+   {
+    "item": "elizabee's_staff",
+    "probability": 1
+   }
+  ]
+ },
+ "Warsect": {
+  "partnerSkill": "When fighting together, increases player's defense and applies Fire damage to the player's attacks.",
+  "drops": [
+   {
+    "item": "honey",
+    "probability": 1
+   }
+  ]
+ },
+ "Gildra": {
+  "drops": [
+   {
+    "item": "gildra_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "ruins",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Quivern": {
+  "partnerSkill": "Can be ridden as a flying mount. Enhances Dragon attacks while mounted.",
+  "drops": [
+   {
+    "item": "high_quality_pal_oil",
+    "probability": 1
+   }
+  ]
+ },
+ "Pyrin": {
+  "partnerSkill": "Can be ridden. Applies Fire damage to the player's attacks while mounted.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   }
+  ]
+ },
+ "Faleris": {
+  "partnerSkill": "Can be ridden as a flying mount. While fighting together, Ice Pals drop more items when defeated.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Skutlass": {
+  "drops": [
+   {
+    "item": "skutlass_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "river",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "When activated, Skutlass becomes the player's katana (Attack: (2600~3900) ). If it does not revert to its normal form quickly, Skutlass will become incapacitated. It will also become incapacitated if Iaigiri is used."
+ },
+ "Ragnahawk": {
+  "partnerSkill": "Can be ridden as a flying mount. Applies Fire damage to the player's attacks while mounted.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Mossanda Lux": {
+  "partnerSkill": "Can be ridden. Can rapidly fire a grenade launcher while mounted.",
+  "drops": [
+   {
+    "item": "mushroom",
+    "probability": 1
+   },
+   {
+    "item": "electric_organ",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   }
+  ]
+ },
+ "Pierdon": {
+  "drops": [
+   {
+    "item": "pierdon_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "canyon",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, increases player's and Pals' damage to enemies afflicted with Muddy by (50~65)% . (Does not stack)"
+ },
+ "Sweepa": {
+  "partnerSkill": "While fighting together, stats will increase the more Swee are in your team.",
+  "drops": [
+   {
+    "item": "wool",
+    "probability": 1
+   }
+  ]
+ },
+ "Nitewing": {
+  "partnerSkill": "Can be ridden as a flying mount.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   }
+  ]
+ },
+ "Mossanda": {
+  "partnerSkill": "Can be ridden. Can rapidly fire a grenade launcher while mounted.",
+  "drops": [
+   {
+    "item": "mushroom",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "tomato_seeds",
+    "probability": 1
+   }
+  ]
+ },
+ "Snugloo": {
+  "drops": [
+   {
+    "item": "snugloo_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "snow",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, reduces the chance of being detected by enemies. (Does not stack)"
+ },
+ "Kingpaca Cryst": {
+  "partnerSkill": "Can be ridden. While in team, Kingpaca helps carry supplies, increasing the player's max carrying capacity.",
+  "drops": [
+   {
+    "item": "wool",
+    "probability": 1
+   },
+   {
+    "item": "ice_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Sibelyx": {
+  "partnerSkill": "When activated, attacks targeted enemy with a powerful Blizzard Spike. Sometimes produces High Quality Cloth when assigned to Ranch.",
+  "drops": [
+   {
+    "item": "high_quality_cloth",
+    "probability": 1
+   },
+   {
+    "item": "ice_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Sibelyx Primo": {
+  "drops": [
+   {
+    "item": "sibelyx_primo_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "mountain",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Wumpo": {
+  "partnerSkill": "Can be ridden. While in team, Wumpo helps carry supplies, increasing the player's max carrying capacity.",
+  "drops": [
+   {
+    "item": "ice_organ",
+    "probability": 1
+   },
+   {
+    "item": "beautiful_flower",
+    "probability": 1
+   }
+  ]
+ },
+ "Carnibora": {
+  "drops": [
+   {
+    "item": "carnibora_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "forest",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Kingpaca": {
+  "partnerSkill": "Can be ridden. While in team, Kingpaca helps carry supplies, increasing the player's max carrying capacity.",
+  "drops": [
+   {
+    "item": "wool",
+    "probability": 1
+   }
+  ]
+ },
+ "Wumpo Botan": {
+  "partnerSkill": "Can be ridden. While in team, Wumpo Botan helps carry supplies, increasing the player's max carrying capacity.",
+  "drops": [
+   {
+    "item": "lettuce_seeds",
+    "probability": 1
+   },
+   {
+    "item": "tomato_seeds",
+    "probability": 1
+   },
+   {
+    "item": "beautiful_flower",
+    "probability": 1
+   }
+  ]
+ },
+ "Cinnamoth": {
+  "partnerSkill": "When activated, attacks target enemy with Poison Fog.",
+  "drops": [
+   {
+    "item": "honey",
+    "probability": 1
+   },
+   {
+    "item": "lettuce_seeds",
+    "probability": 1
+   },
+   {
+    "item": "wheat_seeds",
+    "probability": 1
+   }
+  ]
+ },
+ "Dualith": {
+  "drops": [
+   {
+    "item": "dualith_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "canyon",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Azurobe": {
+  "partnerSkill": "Can be ridden to travel on water. Applies Water damage to the player's attacks while mounted.",
+  "drops": [
+   {
+    "item": "cloth",
+    "probability": 1
+   },
+   {
+    "item": "precious_dragon_stone",
+    "probability": 1
+   }
+  ]
+ },
+ "Grintale": {
+  "partnerSkill": "Can be ridden. Enhances Neutral attacks while mounted.",
+  "drops": [
+   {
+    "item": "high_quality_pal_oil",
+    "probability": 1
+   }
+  ]
+ },
+ "Penking": {
+  "partnerSkill": "When fighting together, Fire Pals drop more items when defeated.",
+  "drops": [
+   {
+    "item": "ice_organ",
+    "probability": 1
+   },
+   {
+    "item": "penking_plume",
+    "probability": 1
+   }
+  ]
+ },
+ "Sekhmet": {
+  "drops": [
+   {
+    "item": "sekhmet_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "volcanic",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While at a base, boosts Anubis 's work speed by (20~40)% . Increases efficiency by (30~60)% if Sekhmet is working at a Workbench, Workshop, or other related facilities. (Does not stack)"
+ },
+ "Elphidran Aqua": {
+  "partnerSkill": "Can be ridden as a flying mount.\nWhile fighting together, Fire Pals drop more items when defeated.",
+  "drops": [
+   {
+    "item": "high_quality_pal_oil",
+    "probability": 1
+   }
+  ]
+ },
+ "Elphidran": {
+  "partnerSkill": "Can be ridden as a flying mount.\n While fighting together, Dark Pals drop more items when defeated.",
+  "drops": [
+   {
+    "item": "high_quality_pal_oil",
+    "probability": 1
+   }
+  ]
+ },
+ "Surfent Terra": {
+  "partnerSkill": "Can be ridden.",
+  "drops": [
+   {
+    "item": "pal_fluids",
+    "probability": 1
+   }
+  ]
+ },
+ "Tetroise": {
+  "drops": [
+   {
+    "item": "tetroise_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "canyon",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "Can be ridden While at a base, increases the Mining"
+ },
+ "Surfent": {
+  "partnerSkill": "Can be ridden to travel on water.\nWhile mounted, prevents stamina depletion while moving over water.",
+  "drops": [
+   {
+    "item": "pal_fluids",
+    "probability": 1
+   }
+  ]
+ },
+ "Anubis": {
+  "partnerSkill": "When fighting together, applies Ground damage to the player's attacks. Sometimes dodges attacks with a high speed sidestep while in a battle.",
+  "drops": [
+   {
+    "item": "bone",
+    "probability": 1
+   },
+   {
+    "item": "large_pal_soul",
+    "probability": 1
+   },
+   {
+    "item": "innovative_technical_manual",
+    "probability": 1
+   }
+  ]
+ },
+ "Incineram Noct": {
+  "partnerSkill": "When activated, attacks targeted enemy with a powerful Hellfire Claw.",
+  "drops": [
+   {
+    "item": "horn",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   }
+  ]
+ },
+ "Bulldosu": {
+  "drops": [
+   {
+    "item": "bulldosu_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "canyon",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Incineram": {
+  "partnerSkill": "When activated, attacks targeted enemy with a powerful Hellfire Claw.",
+  "drops": [
+   {
+    "item": "horn",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   }
+  ]
+ },
+ "Valentail": {
+  "drops": [
+   {
+    "item": "valentail_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "river",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, reduces the effects of gravity on the player, making them more floaty while jumping and falling. (Does not stack)"
+ },
+ "Vanwyrm Cryst": {
+  "partnerSkill": "Can be ridden as a flying mount. Increases damage player deals to enemy weak points while mounted.",
+  "drops": [
+   {
+    "item": "bone",
+    "probability": 1
+   },
+   {
+    "item": "ice_organ",
+    "probability": 1
+   },
+   {
+    "item": "sapphire",
+    "probability": 1
+   }
+  ]
+ },
+ "Bushi": {
+  "partnerSkill": "When activated, attacks targeted enemy with a powerful Iaigiri.",
+  "drops": [
+   {
+    "item": "bone",
+    "probability": 1
+   },
+   {
+    "item": "ingot",
+    "probability": 1
+   }
+  ]
+ },
+ "Snock": {
+  "drops": [
+   {
+    "item": "snock_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "ruins",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, the player's attacks increase Electrify buildup by (2~6) . (Does not stack)"
+ },
+ "Vanwyrm": {
+  "partnerSkill": "Can be ridden as a flying mount. Increases damage player deals to enemy weak points while mounted.",
+  "drops": [
+   {
+    "item": "bone",
+    "probability": 1
+   },
+   {
+    "item": "ruby",
+    "probability": 1
+   },
+   {
+    "item": "gold_coin",
+    "probability": 1
+   }
+  ]
+ },
+ "Blazehowl Noct": {
+  "partnerSkill": "Can be ridden. While fighting together, Neutral Pals drop more items when defeated.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Souffline": {
+  "drops": [
+   {
+    "item": "souffline_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "volcanic",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, increases the capture rate of Pals afflicted with Ivy-Covered . (Does not stack)"
+ },
+ "Univolt": {
+  "partnerSkill": "Can be ridden. Applies Electric damage to the player's attacks while mounted.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "electric_organ",
+    "probability": 1
+   },
+   {
+    "item": "horn",
+    "probability": 1
+   }
+  ]
+ },
+ "Univolt Cryst": {
+  "drops": [
+   {
+    "item": "univolt_cryst_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "snow",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Katress": {
+  "partnerSkill": "While fighting together, Neutral Pals drop more items when defeated.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "katress_hair",
+    "probability": 1
+   },
+   {
+    "item": "high_grade_technical_manual",
+    "probability": 1
+   }
+  ]
+ },
+ "Lapiron": {
+  "drops": [
+   {
+    "item": "lapiron_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "snow",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, increases the player's Defense by (50~65)% while sprinting. (Does not stack)"
+ },
+ "Blazehowl": {
+  "partnerSkill": "Can be ridden. While fighting together, Grass Pals drop more items when defeated.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Hoodle": {
+  "drops": [
+   {
+    "item": "hoodle_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "ruins",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Rayhound": {
+  "partnerSkill": "Can be ridden. Can double jump while mounted.",
+  "drops": [
+   {
+    "item": "electric_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Rayhound Cryst": {
+  "drops": [
+   {
+    "item": "rayhound_cryst_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "snow",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Tombat": {
+  "partnerSkill": "When activated, uses ultrasonic waves to detect the location of nearby Pals.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "small_pal_soul",
+    "probability": 1
+   }
+  ]
+ },
+ "Foxcicle": {
+  "partnerSkill": "While in a team, increases attack power of Ice pals.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "ice_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Slowatt": {
+  "drops": [
+   {
+    "item": "slowatt_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "river",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, when the player attacks an enemy afflicted with Electrify , the enemy discharges electricity , dealing damage equal to (40~60)% of the player's attack damage to nearby enemies. (Does not stack.)"
+ },
+ "Petallia": {
+  "partnerSkill": "When activated, uses medicinal flowers to restore the player's HP.",
+  "drops": [
+   {
+    "item": "beautiful_flower",
+    "probability": 1
+   }
+  ]
+ },
+ "Petallia Ignis": {
+  "drops": [
+   {
+    "item": "petallia_ignis_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "volcanic",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Arsox": {
+  "partnerSkill": "Can be ridden. Keeps the rider warm in cold environments.",
+  "drops": [
+   {
+    "item": "horn",
+    "probability": 1
+   },
+   {
+    "item": "flame_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Bakemi": {
+  "drops": [
+   {
+    "item": "bakemi_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "volcanic",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Chillet": {
+  "partnerSkill": "Can be ridden.\nApplies Dragon Dragon damage to the player's attacks while mounted.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   }
+  ]
+ },
+ "Dinossom Lux": {
+  "partnerSkill": "Can be ridden. Enhances Electric attacks while mounted.",
+  "drops": [
+   {
+    "item": "tomato_seeds",
+    "probability": 1
+   }
+  ]
+ },
+ "Dinossom": {
+  "partnerSkill": "Can be ridden.\nEnchances Grass attacks while mounted.",
+  "drops": [
+   {
+    "item": "wheat_seeds",
+    "probability": 1
+   }
+  ]
+ },
+ "Solmora": {
+  "drops": [
+   {
+    "item": "solmora_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "volcanic",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "Can be ridden to travel on water. While in party, makes it easier to fish up talented Pals . (Does not stack) Technology 65"
+ },
+ "Kitsun": {
+  "partnerSkill": "Can be ridden. Unaffected by the cold or heat while riding this Pal.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   }
+  ]
+ },
+ "Broncherry Aqua": {
+  "partnerSkill": "Can be ridden. While in team, Broncherry helps carry supplies, increasing the player's max carrying capacity.",
+  "drops": [
+   {
+    "item": "broncherry_meat",
+    "probability": 1
+   },
+   {
+    "item": "lettuce_seeds",
+    "probability": 1
+   }
+  ]
+ },
+ "Digtoise": {
+  "partnerSkill": "When activated, performs Shell Spin, follows the player while spinning, and mines ores efficiently.",
+  "drops": [
+   {
+    "item": "ore",
+    "probability": 1
+   },
+   {
+    "item": "high_quality_pal_oil",
+    "probability": 1
+   }
+  ]
+ },
+ "Lapure": {
+  "drops": [
+   {
+    "item": "lapure_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "river",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, reduces the Partner Skill cooldowns for other party Pals by (10~50)% . (Does not stack)"
+ },
+ "Broncherry": {
+  "partnerSkill": "Can be ridden. While in team, Broncherry helps carry supplies, increasing the player's max carrying capacity.",
+  "drops": [
+   {
+    "item": "broncherry_meat",
+    "probability": 1
+   },
+   {
+    "item": "tomato_seeds",
+    "probability": 1
+   }
+  ]
+ },
+ "Celaray": {
+  "partnerSkill": "While in team, can be summoned and used instead of a glider.\nAllows you to move quickly for long periods of time while gliding with this Pal.",
+  "drops": [
+   {
+    "item": "pal_fluids",
+    "probability": 1
+   }
+  ]
+ },
+ "Reindrix": {
+  "partnerSkill": "Can be ridden.\nKeeps the rider cool in hot environments.",
+  "drops": [
+   {
+    "item": "reindrix_venison",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "horn",
+    "probability": 1
+   },
+   {
+    "item": "ice_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Eidrolon": {
+  "drops": [
+   {
+    "item": "eidrolon_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "ruins",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Melpaca": {
+  "partnerSkill": "Can be ridden.\nSometimes drops Wool when assigned to Ranch.",
+  "drops": [
+   {
+    "item": "wool",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   }
+  ]
+ },
+ "Dumud": {
+  "partnerSkill": "While in team, increases attack power of Ground Pals.",
+  "drops": [
+   {
+    "item": "raw_dumud",
+    "probability": 1
+   },
+   {
+    "item": "high_quality_pal_oil",
+    "probability": 1
+   }
+  ]
+ },
+ "Eikthyrdeer Terra": {
+  "partnerSkill": "Can be ridden. Can perform a double jump while mounted. Increases efficiency of cutting trees.",
+  "drops": [
+   {
+    "item": "eikthyrdeer_venison",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "horn",
+    "probability": 1
+   }
+  ]
+ },
+ "Mozzarina": {
+  "partnerSkill": "Sometimes produces Milk when assigned to ranch.",
+  "drops": [
+   {
+    "item": "mozzarina_meat",
+    "probability": 1
+   },
+   {
+    "item": "milk",
+    "probability": 1
+   }
+  ]
+ },
+ "Dynamoff": {
+  "drops": [
+   {
+    "item": "dynamoff_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "mountain",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Eikthyrdeer": {
+  "partnerSkill": "Can be ridden.\nCan perform a double jump while mounted.\nIncreases efficiency of cutting trees.",
+  "drops": [
+   {
+    "item": "eikthyrdeer_venison",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "horn",
+    "probability": 1
+   }
+  ]
+ },
+ "Caprity": {
+  "partnerSkill": "Sometimes drops Red Berries from its back when assigned to Ranch.",
+  "drops": [
+   {
+    "item": "caprity_meat",
+    "probability": 1
+   },
+   {
+    "item": "red_berries",
+    "probability": 1
+   },
+   {
+    "item": "horn",
+    "probability": 1
+   }
+  ]
+ },
+ "Lovander": {
+  "partnerSkill": "While fighting together, grants the player and Lovander the life steal effect which absorbs some of the received damage and restores HP.",
+  "drops": [
+   {
+    "item": "mushroom",
+    "probability": 1
+   },
+   {
+    "item": "cake",
+    "probability": 1
+   },
+   {
+    "item": "suspicious_juice",
+    "probability": 1
+   },
+   {
+    "item": "strange_juice",
+    "probability": 1
+   }
+  ]
+ },
+ "Tropicaw": {
+  "drops": [
+   {
+    "item": "tropicaw_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "forest",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, extends the invincibility period during dodge rolls and dodge steps by (15~30)% . (Does not stack)"
+ },
+ "Loupmoon": {
+  "partnerSkill": "When activated, attacks targeted enemy with a powerful Jumping Claw.",
+  "drops": [
+   {
+    "item": "bone",
+    "probability": 1
+   }
+  ]
+ },
+ "Flaracle": {
+  "drops": [
+   {
+    "item": "flaracle_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "volcanic",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Fenglope": {
+  "partnerSkill": "Can be ridden. Can double jump while mounted.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "horn",
+    "probability": 1
+   }
+  ]
+ },
+ "Verdash": {
+  "partnerSkill": "When fighting together, increases player's movement speed and applies Grass damage to the player's attacks.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "bone",
+    "probability": 1
+   }
+  ]
+ },
+ "Robinquill Terra": {
+  "partnerSkill": "While fighting together, allows you to deal more damage to weak points.",
+  "drops": [
+   {
+    "item": "wheat_seeds",
+    "probability": 1
+   },
+   {
+    "item": "arrow",
+    "probability": 1
+   }
+  ]
+ },
+ "Ophydia": {
+  "drops": [
+   {
+    "item": "ophydia_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "ruins",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Felbat": {
+  "partnerSkill": "While fighting together, grants the player and Felbat the life steal effect which absorbs some of the received damage and restores HP.",
+  "drops": [
+   {
+    "item": "cloth",
+    "probability": 1
+   },
+   {
+    "item": "small_pal_soul",
+    "probability": 1
+   }
+  ]
+ },
+ "Robinquill": {
+  "partnerSkill": "While fighting together, allows you to deal more damage to weak points.",
+  "drops": [
+   {
+    "item": "wheat_seeds",
+    "probability": 1
+   },
+   {
+    "item": "arrow",
+    "probability": 1
+   }
+  ]
+ },
+ "Galeclaw": {
+  "partnerSkill": "While in team, can be summoned and used instead of a glider. Allows you to fire a gun while gliding with this Pal.",
+  "drops": [
+   {
+    "item": "galeclaw_poultry",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   }
+  ]
+ },
+ "Dupin": {
+  "drops": [
+   {
+    "item": "dupin_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "ruins",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Gorirat": {
+  "partnerSkill": "When activated, unleashes a primal fury that increases Gorirat's attack power.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "bone",
+    "probability": 1
+   }
+  ]
+ },
+ "Vaelet": {
+  "partnerSkill": "While fighting together, Ground Pals drop more items when defeated.",
+  "drops": [
+   {
+    "item": "low_grade_medical_supplies",
+    "probability": 1
+   },
+   {
+    "item": "tomato_seeds",
+    "probability": 1
+   }
+  ]
+ },
+ "Direhowl": {
+  "partnerSkill": "Can be ridden.\nMoves slightly faster than most mounts.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "ruby",
+    "probability": 1
+   },
+   {
+    "item": "gold_coin",
+    "probability": 1
+   }
+  ]
+ },
+ "Roujay": {
+  "drops": [
+   {
+    "item": "roujay_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "mountain",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "Can be ridden as a flying mount. While in party, increases player's and Pals' damage to enemies afflicted with Blind by (50~65)% . (Does not stack) Technology 72"
+ },
+ "Beegarde": {
+  "partnerSkill": "Sometimes drops Honey when assigned to Ranch.\nWhile in team, Elizabee's stats will be increased.",
+  "drops": [
+   {
+    "item": "honey",
+    "probability": 1
+   }
+  ]
+ },
+ "Cawgnito": {
+  "partnerSkill": "When activated, attacks targeted enemy with a powerful Phantom Peck.",
+  "drops": [
+   {
+    "item": "bone",
+    "probability": 1
+   },
+   {
+    "item": "venom_gland",
+    "probability": 1
+   },
+   {
+    "item": "small_pal_soul",
+    "probability": 1
+   }
+  ]
+ },
+ "Gobfin": {
+  "partnerSkill": "When activated, attacks targeted enemy with a powerful Aqua Gun. While in team, increases player's attack power.",
+  "drops": [
+   {
+    "item": "pal_fluids",
+    "probability": 1
+   }
+  ]
+ },
+ "Venusa": {
+  "drops": [
+   {
+    "item": "venusa_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "forest",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, the player's attacks increase Blind buildup by (2~6) . (Does not stack)"
+ },
+ "Gobfin Ignis": {
+  "partnerSkill": "When activated, attacks targeted enemy with a powerful Spirit Fire. While in team, increases player's attack power.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Lunaris": {
+  "partnerSkill": "While in team, Lunaris manipulates gravity, increasing the player's max carrying capacity.",
+  "drops": [
+   {
+    "item": "paldium_fragment",
+    "probability": 1
+   }
+  ]
+ },
+ "Leezpunk": {
+  "partnerSkill": "When activated, utilizes its sixth sense to detect nearby dungeons.",
+  "drops": [
+   {
+    "item": "copper_key",
+    "probability": 1
+   },
+   {
+    "item": "silver_key",
+    "probability": 1
+   }
+  ]
+ },
+ "Mycora": {
+  "drops": [
+   {
+    "item": "mycora_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "forest",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Rushoar": {
+  "partnerSkill": "Can be ridden. Increases efficiency of destroying boulders while mounted.",
+  "drops": [
+   {
+    "item": "rushoar_pork",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "bone",
+    "probability": 1
+   }
+  ]
+ },
+ "Leezpunk Ignis": {
+  "partnerSkill": "When activated, utilizes its sixth sense to detect nearby dungeons.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   },
+   {
+    "item": "silver_key",
+    "probability": 1
+   }
+  ]
+ },
+ "Maraith": {
+  "partnerSkill": "Can be ridden.\nApplies Dark damage to the player's attacks while mounted.",
+  "drops": [
+   {
+    "item": "bone",
+    "probability": 1
+   },
+   {
+    "item": "small_pal_soul",
+    "probability": 1
+   }
+  ]
+ },
+ "Rooby": {
+  "partnerSkill": "While in team, increases attack power of Fire Pals.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   },
+   {
+    "item": "leather",
+    "probability": 1
+   }
+  ]
+ },
+ "Loomen": {
+  "drops": [
+   {
+    "item": "loomen_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "mountain",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Wixen": {
+  "partnerSkill": "When fighting together, applies Fire damage to the player's attacks.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   },
+   {
+    "item": "high_grade_technical_manual",
+    "probability": 1
+   }
+  ]
+ },
+ "Nox": {
+  "partnerSkill": "When fighting together, applies Dark damage to the player's attacks.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "small_pal_soul",
+    "probability": 1
+   }
+  ]
+ },
+ "Wistella": {
+  "drops": [
+   {
+    "item": "wistella_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "ruins",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, increases Defense of Dark Pals by (15~30)% . (Does not stack)"
+ },
+ "Woolipop": {
+  "partnerSkill": "Sometimes drops Cotton Candy when assigned to ranch.",
+  "drops": [
+   {
+    "item": "cotton_candy",
+    "probability": 1
+   },
+   {
+    "item": "high_quality_pal_oil",
+    "probability": 1
+   }
+  ]
+ },
+ "Woolipop Terra": {
+  "drops": [
+   {
+    "item": "woolipop_terra_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "canyon",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Dazzi": {
+  "partnerSkill": "While in team, appears near the player. Follows up player attacks with lightning bolts.",
+  "drops": [
+   {
+    "item": "electric_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Solenne": {
+  "drops": [
+   {
+    "item": "solenne_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "grassland",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, increases the player's Attack by (30~80)% if all Pals in party are different species. (Does not stack)"
+ },
+ "Fuddler": {
+  "partnerSkill": "When activated, generates subtle vibrations to detect nearby ore.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   }
+  ]
+ },
+ "Daedream": {
+  "partnerSkill": "While in team, appears near the player. Follows up player attacks with magic bullets.",
+  "drops": [
+   {
+    "item": "venom_gland",
+    "probability": 1
+   },
+   {
+    "item": "small_pal_soul",
+    "probability": 1
+   }
+  ]
+ },
+ "Gumoss": {
+  "partnerSkill": "While in team, improves efficiency of cutting trees.",
+  "drops": [
+   {
+    "item": "berry_seeds",
+    "probability": 1
+   },
+   {
+    "item": "gumoss_leaf",
+    "probability": 1
+   }
+  ]
+ },
+ "Renjishi": {
+  "drops": [
+   {
+    "item": "renjishi_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "volcanic",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "While in party, the player's attacks increase Burn buildup by (2~6) . (Does not stack)"
+ },
+ "Tanzee": {
+  "partnerSkill": "When activated, Tanzee will mercilessly fire an assault rifle at nearby enemies.",
+  "drops": [
+   {
+    "item": "mushroom",
+    "probability": 1
+   }
+  ]
+ },
+ "Tanzee Ignis": {
+  "drops": [
+   {
+    "item": "tanzee_ignis_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "volcanic",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Kelpsea": {
+  "partnerSkill": "While in team, increases attack power of Water Pals.",
+  "drops": [
+   {
+    "item": "raw_kelpsea",
+    "probability": 1
+   },
+   {
+    "item": "pal_fluids",
+    "probability": 1
+   }
+  ]
+ },
+ "Kelpsea Ignis": {
+  "partnerSkill": "While in team, increases attack power of Fire Pals.",
+  "drops": [
+   {
+    "item": "raw_kelpsea",
+    "probability": 1
+   },
+   {
+    "item": "flame_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Aegidron": {
+  "drops": [
+   {
+    "item": "aegidron_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "canyon",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Flopie": {
+  "partnerSkill": "While in team, appears nearby the player. Automatically picks up nearby items.",
+  "drops": [
+   {
+    "item": "low_grade_medical_supplies",
+    "probability": 1
+   },
+   {
+    "item": "wheat_seeds",
+    "probability": 1
+   }
+  ]
+ },
+ "Killamari": {
+  "partnerSkill": "While in team, can be summoned and used instead of a glider.\nCan float for long periods of time while gliding.",
+  "drops": [
+   {
+    "item": "venom_gland",
+    "probability": 1
+   }
+  ]
+ },
+ "Swee": {
+  "partnerSkill": "While in team, Sweepa's stats will be increased.",
+  "drops": [
+   {
+    "item": "wool",
+    "probability": 1
+   }
+  ]
+ },
+ "Shaolong": {
+  "drops": [
+   {
+    "item": "shaolong_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "river",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Ribbuny": {
+  "partnerSkill": "While in team, increases attack power of Neutral Pals.\nWhile at base, increases work efficiency if working at Weapon Workbench.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "beautiful_flower",
+    "probability": 1
+   }
+  ]
+ },
+ "Bristla": {
+  "partnerSkill": "While in team, increases attack power of Grass Pals.",
+  "drops": [
+   {
+    "item": "wheat_seeds",
+    "probability": 1
+   },
+   {
+    "item": "lettuce_seeds",
+    "probability": 1
+   }
+  ]
+ },
+ "Fuack": {
+  "partnerSkill": "When activated, Fuack body surfs towards an enemy and slams into them.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "pal_fluids",
+    "probability": 1
+   }
+  ]
+ },
+ "Silvance": {
+  "drops": [
+   {
+    "item": "silvance_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "snow",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Tocotoco": {
+  "partnerSkill": "When activated, equips to the player and transforms into an egg launcher.",
+  "drops": [
+   {
+    "item": "gunpowder",
+    "probability": 1
+   },
+   {
+    "item": "tocotoco_feather",
+    "probability": 1
+   }
+  ]
+ },
+ "Pengullet": {
+  "partnerSkill": "When activated, the player equips a Rocket Launcher and fires Pengullet as ammunition. Pengullet explodes on contact and is incapacitated.",
+  "drops": [
+   {
+    "item": "ice_organ",
+    "probability": 1
+   },
+   {
+    "item": "pal_fluids",
+    "probability": 1
+   }
+  ]
+ },
+ "Jolthog Cryst": {
+  "partnerSkill": "When activated, equips Jolthog Cryst to the player's hand. When thrown at an enemy, causes an icy explosion upon impact.",
+  "drops": [
+   {
+    "item": "ice_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Dandilord": {
+  "drops": [
+   {
+    "item": "dandilord_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "forest",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Jolthog": {
+  "partnerSkill": "When activated, equips Jolthog to the player's hand. When thrown at an enemy, causes an electrical explosion upon impact.",
+  "drops": [
+   {
+    "item": "electric_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Depresso": {
+  "partnerSkill": "When activated, Depresso drinks a massive amount of energy drinks, causing its movement speed to increase.",
+  "drops": [
+   {
+    "item": "venom_gland",
+    "probability": 1
+   }
+  ]
+ },
+ "Hoocrates": {
+  "partnerSkill": "While in team, increases attack power of Dark Pals.",
+  "drops": [
+   {
+    "item": "fiber",
+    "probability": 1
+   },
+   {
+    "item": "high_grade_technical_manual",
+    "probability": 1
+   }
+  ]
+ },
+ "Panthalus": {
+  "drops": [
+   {
+    "item": "panthalus_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "river",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ],
+  "partnerSkill": "Can be ridden as a flying mount. Only 1 can be summoned to a base. While at a base, it constantly patrols the skies and bombards intruders from high above."
+ },
+ "Foxparks": {
+  "partnerSkill": "When activated, equips to the player and transforms into a flamethrower.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "flame_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Flambelle": {
+  "partnerSkill": "Sometimes produces Flame Organ when assigned to Ranch.",
+  "drops": [
+   {
+    "item": "flame_organ",
+    "probability": 1
+   },
+   {
+    "item": "high_quality_pal_oil",
+    "probability": 1
+   }
+  ]
+ },
+ "Sparkit": {
+  "partnerSkill": "While in team, increases attack power of Electric Pals.",
+  "drops": [
+   {
+    "item": "electric_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Hangyu": {
+  "partnerSkill": "While in team, can be summoned and used instead of a glider. Carries the player up high while gliding.",
+  "drops": [
+   {
+    "item": "fiber",
+    "probability": 1
+   }
+  ]
+ },
+ "Hangyu Cryst": {
+  "partnerSkill": "While in team, can be summoned and used instead of a glider. Carries the player up high while gliding.",
+  "drops": [
+   {
+    "item": "fiber",
+    "probability": 1
+   },
+   {
+    "item": "ice_organ",
+    "probability": 1
+   }
+  ]
+ },
+ "Astralym": {
+  "drops": [
+   {
+    "item": "astralym_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "mountain",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Lifmunk": {
+  "partnerSkill": "When activated, leaps into the player's head and uses a submachine gun to follows up player attacks.",
+  "drops": [
+   {
+    "item": "berry_seeds",
+    "probability": 1
+   },
+   {
+    "item": "low_grade_medical_supplies",
+    "probability": 1
+   }
+  ]
+ },
+ "Mau Cryst": {
+  "partnerSkill": "Sometimes digs up Gold Coin when assigned to Ranch.",
+  "drops": [
+   {
+    "item": "ice_organ",
+    "probability": 1
+   },
+   {
+    "item": "sapphire",
+    "probability": 1
+   }
+  ]
+ },
+ "Vixy": {
+  "partnerSkill": "Sometimes digs up items from the ground when assigned to Ranch.",
+  "drops": [
+   {
+    "item": "leather",
+    "probability": 1
+   },
+   {
+    "item": "bone",
+    "probability": 1
+   }
+  ]
+ },
+ "Cremis": {
+  "partnerSkill": "While in team, increases attack power of Neutral Pals. Sometimes drops Wool when assigned to Ranch.",
+  "drops": [
+   {
+    "item": "wool",
+    "probability": 1
+   }
+  ]
+ },
+ "Cattiva": {
+  "partnerSkill": "While in team, Cattiva helps carry supplies, increasing the player's max carrying capacity.",
+  "drops": [
+   {
+    "item": "red_berries",
+    "probability": 1
+   }
+  ]
+ },
+ "Lamball": {
+  "partnerSkill": "When activated, equips to the player and becomes a shield.\nSometimes drops Wool when assigned to Ranch.",
+  "drops": [
+   {
+    "item": "wool",
+    "probability": 1
+   },
+   {
+    "item": "lamball_mutton",
+    "probability": 1
+   }
+  ]
+ },
+ "Mau": {
+  "partnerSkill": "Sometimes digs up Gold Coin when assigned to Ranch.",
+  "drops": [
+   {
+    "item": "gold_coin",
+    "probability": 1
+   }
+  ]
+ },
+ "Teafant": {
+  "partnerSkill": "When activated, spouts mysterious water that soothes wounds and restores the player's HP.",
+  "drops": [
+   {
+    "item": "pal_fluids",
+    "probability": 1
+   }
+  ]
+ },
+ "Chikipi": {
+  "partnerSkill": "Sometimes lays an Egg when assigned to Ranch.",
+  "drops": [
+   {
+    "item": "egg",
+    "probability": 1
+   },
+   {
+    "item": "chikipi_poultry",
+    "probability": 1
+   }
+  ]
+ },
+ "Gloopie Primo": {
+  "drops": [
+   {
+    "item": "gloopie_primo_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "mountain",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Polapup Terra": {
+  "drops": [
+   {
+    "item": "polapup_terra_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "canyon",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Elgrove Cryst": {
+  "drops": [
+   {
+    "item": "elgrove_cryst_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "snow",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Needoll Noct": {
+  "drops": [
+   {
+    "item": "needoll_noct_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "ruins",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Moldron Cryst": {
+  "drops": [
+   {
+    "item": "moldron_cryst_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "snow",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Skutlass Ignis": {
+  "drops": [
+   {
+    "item": "skutlass_ignis_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "volcanic",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Starryon Primo": {
+  "drops": [
+   {
+    "item": "starryon_primo_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "mountain",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Pierdon Cryst": {
+  "drops": [
+   {
+    "item": "pierdon_cryst_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "snow",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Dualith Noct": {
+  "drops": [
+   {
+    "item": "dualith_noct_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "ruins",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Prixter Lux": {
+  "drops": [
+   {
+    "item": "prixter_lux_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "mountain",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Tetroise Primo": {
+  "drops": [
+   {
+    "item": "tetroise_primo_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "mountain",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Nitemary Botan": {
+  "drops": [
+   {
+    "item": "nitemary_botan_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "forest",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Smokie Cryst": {
+  "drops": [
+   {
+    "item": "smokie_cryst_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "snow",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Celesdir Noct": {
+  "drops": [
+   {
+    "item": "celesdir_noct_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "ruins",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Knocklem Ignis": {
+  "drops": [
+   {
+    "item": "knocklem_ignis_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "volcanic",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Snock Lux": {
+  "drops": [
+   {
+    "item": "snock_lux_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "mountain",
+    "regionName": "Palworld",
+    "commonness": "common",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Solmora Lux": {
+  "drops": [
+   {
+    "item": "solmora_lux_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "mountain",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Eidrolon Ignis": {
+  "drops": [
+   {
+    "item": "eidrolon_ignis_meat",
+    "probability": 1
+   }
+  ],
+  "habitats": [
+   {
+    "biome": "volcanic",
+    "regionName": "World Tree",
+    "commonness": "very rare",
+    "timeOfDay": [
+     "both"
+    ],
+    "weather": [
+     "any"
+    ]
+   }
+  ]
+ },
+ "Jelliette": {
+  "partnerSkill": "While in party, increases items obtained from fishing by (55~95)% . While Jelliette and Jellroy are in your base, Jelliette 's watering speed increases by (50~120)% . (Does not stack)"
+ },
+ "Jellroy": {
+  "partnerSkill": "While in party, increases items obtained from salvaging by (55~95)% . While Jelliette and Jellroy are in your base, Jellroy 's watering speed increases by (50~120)% . (Does not stack)"
+ },
+ "Knocklem_Ignis": {
+  "partnerSkill": "When activated, a steel resolve increases Knocklem Ignis 's Attack by (60~210)% and Defense by (60~210)% for a limited time."
+ },
+ "Petallia_Ignis": {
+  "partnerSkill": "When activated, soothing blossoms restore the player's Health by (80~90)% . While in party, player and party Pals take (15~30)% less Grass damage, and are immune to Ivy-Covered . (Does not stack)"
+ },
+ "Pierdon_Cryst": {
+  "partnerSkill": "While in party, player and party Pals take (15~30)% less Dragon damage. (Does not stack)"
+ },
+ "Polapup": {
+  "partnerSkill": "Can be ridden. Movement Speed is increased by (80~160)% while mounted on snow . Can also slide quickly down slopes. Technology 26"
+ },
+ "Polapup_Terra": {
+  "partnerSkill": "Can be ridden. Movement Speed is increased by (80~160)% while mounted on snow . Can also slide quickly down slopes. While it starts out slow, the top speed it can hit while sliding is no joke. Technology 55"
+ },
+ "Prixter_Lux": {
+  "partnerSkill": "When activated, Prixter Lux changes the player's attack type to Electric and increases Attack by (30~50)% ."
+ },
+ "Rayhound_Cryst": {
+  "partnerSkill": "Can be ridden. Can perform a double jump while mounted. While in party, increases Defense of Ice Pals by (15~30)% . (Does not stack) Technology 32"
+ },
+ "Ribbuny_Botan": {
+  "partnerSkill": "While in party, increases damage dealt by Player and Pals' Grass attacks when hitting the enemy's elemental weakness by (25~40)% . (Does not stack) Increases Ribbuny Botan 's efficiency by (200~400)% when working at a Weapon Workbench, Weapon Assembly Line, or other related facilities."
+ },
+ "Skutlass_Ignis": {
+  "partnerSkill": "When activated, Skutlass Ignis becomes the player's katana (Attack: (2900~4200) ). If it does not revert to its normal form quickly, Skutlass Ignis will become incapacitated. It will also become incapacitated if Iaigiri is used."
+ },
+ "Smokie_Cryst": {
+  "partnerSkill": "While at a base, increases the Cooling"
+ },
+ "Snock_Lux": {
+  "partnerSkill": "While in party, player and party Pals take (15~30)% less Water damage, and are immune to Soak . (Does not stack)"
+ },
+ "Snock_Terra": {
+  "partnerSkill": "While in party, player and party Pals take (15~30)% less Water damage, and are immune to Soak . (Does not stack)"
+ },
+ "Solmora_Lux": {
+  "partnerSkill": "Can be ridden to travel on water. While mounted, changes the player's attack type to Electric and increases Attack by (5~20)% . While in party, makes it easier to fish up talented Pals . (Does not stack) Technology 66"
+ },
+ "Starryon": {
+  "partnerSkill": "Can be ridden. Boosts Jump Power while mounted. This Pal's movement speed increases by +(50~100)% at night. Technology 57"
+ },
+ "Starryon_Primo": {
+  "partnerSkill": "Can be ridden. Boosts Jump Power while mounted. This Pal's Movement Speed increases by (5~25)% for each other Neutral Pal in your party. (Excluding Starryon Primo ) Technology 77"
+ },
+ "Tetroise_Primo": {
+  "partnerSkill": "Can be ridden. While in party, reduces durability loss of all weapons and armor by (80~100)% . (Does not stack) Technology 75"
+ },
+ "Univolt_Cryst": {
+  "partnerSkill": "Can be ridden. While mounted, changes the player's attack type to Ice and increases Attack by (5~20)% . Technology 64"
+ },
+ "Whalaska": {
+  "partnerSkill": "Can be ridden. While in party, fishing minigames start with the capture gauge increased by (5~14)% . Additionally, while the bars overlap, capture progress increases by (5~14)% . (Does not stack) Technology 42"
+ },
+ "Whalaska_Ignis": {
+  "partnerSkill": "Can be ridden. While in party, fishing minigame begins with the capture gauge (7~17)% higher than usual, and capture progress increases by (7~17)% while the bars overlap. (Does not stack) Technology 71"
+ },
+ "Woolipop_Terra": {
+  "partnerSkill": "Sometimes drops Caramel Cotton Candy when assigned to Ranch . While at a base, reduces Hunger depletion rate of Base Pals by (-15~-25)% . (Does not stack)"
+ }
+}

@@ -23,11 +23,19 @@ describe("getResultingPal — floor formula", () => {
   });
 
   it("uses the UNIQUE_COMBOS override before the power rule", () => {
-    const nitewing = byName("Nitewing");
-    const vanwyrm = byName("Vanwyrm");
-    expect(getResultingPal(nitewing, vanwyrm).name).toBe(
-      UNIQUE_COMBOS["Nitewing+Vanwyrm"],
+    const arsox = byName("Arsox");
+    const chillet = byName("Chillet");
+    expect(getResultingPal(arsox, chillet).name).toBe(
+      UNIQUE_COMBOS["Arsox+Chillet"],
     );
+    expect(UNIQUE_COMBOS["Arsox+Chillet"]).toBe("Chillet Ignis");
+  });
+
+  it("Katress + Wixen is gender-dependent (primary: Katress Ignis)", () => {
+    const katress = byName("Katress");
+    const wixen = byName("Wixen");
+    expect(getResultingPal(katress, wixen).name).toBe("Katress Ignis");
+    expect(getResultingPal(wixen, katress).name).toBe("Katress Ignis");
   });
 
   // Regression guard for the 1.0 breeding-power reshuffle (spec §2 D1).
@@ -55,12 +63,14 @@ describe("getResultingPal — floor formula", () => {
 });
 
 describe("mutationChance (1.0)", () => {
+  // Mushroom/Vegetable/Special do not RAISE the mutation chance, but they
+  // keep the ~1% baseline (fixed 2026-10-22 — they previously returned 0).
   const cases: Array<[CakeType, number]> = [
     ["none", 0.01],
     ["deluxe", 0.03],
-    ["mushroom", 0],
-    ["vegetable", 0],
-    ["special", 0],
+    ["mushroom", 0.01],
+    ["vegetable", 0.01],
+    ["special", 0.01],
   ];
   it.each(cases)("cake=%s returns %s", (cake, expected) => {
     expect(mutationChance(cake)).toBe(expected);

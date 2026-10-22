@@ -9,7 +9,7 @@ export const revalidate = 86400;
 export const metadata: Metadata = {
   title: "All Palworld 1.0 Breeding Combinations — Complete Combo List",
   description:
-    "Every breeding combination in Palworld 1.0: all 210 Pals with their easiest parent pair, breeding power, and typing. The complete Palworld breeding combos reference, sorted A–Z.",
+    "Every breeding combination in Palworld 1.0: all 298 Pals with their easiest parent pair, breeding power, and typing. The complete Palworld breeding combos reference, sorted A–Z.",
   keywords: [
     "palworld breeding combos",
     "all palworld breeding combinations",

@@ -118,7 +118,7 @@ export const BIOME_COLORS: Record<Biome, string> = {
 // In a full implementation, this would be expanded to cover all 137 Pals
 export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notableLocations?: string[] }>> = {
   // Lamball - Plains areas
-  "1": {
+  "Lamball": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -127,7 +127,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Cattiva - Forest areas
-  "2": {
+  "Cattiva": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
@@ -136,7 +136,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Chikipi - Plains and farm areas
-  "3": {
+  "Chikipi": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -146,7 +146,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Lifmunk - Forest areas
-  "4": {
+  "Lifmunk": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -156,7 +156,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Foxparks - Grassland and volcanic areas
-  "5": {
+  "Foxparks": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
@@ -166,7 +166,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Fuack - Water areas
-  "6": {
+  "Fuack": {
     habitats: [
       { biome: 'lake', regionName: 'East Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'lake', regionName: 'West Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -176,7 +176,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Sparkit - Plains and urban areas
-  "7": {
+  "Sparkit": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['night'] },
       { biome: 'urban', regionName: 'Plateau of Beginnings', commonness: 'common', timeOfDay: ['night'] },
@@ -186,7 +186,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Tanzee - Jungle and forest areas
-  "8": {
+  "Tanzee": {
     habitats: [
       { biome: 'jungle', regionName: 'Southern Jungle', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
@@ -196,7 +196,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Rooby - Grassland areas (rarity 2)
-  "9": {
+  "Rooby": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -206,7 +206,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Vanwyrm - Forest and mountain areas (example flying Pal)
-  "103": {
+  "Vanwyrm": {
     habitats: [
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
       { biome: 'mountain', regionName: 'Mount Obsidian', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -216,7 +216,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Ice Kingpal - Snow areas (example ice Pal)
-  "109": {
+  "Necromus": {
     habitats: [
       { biome: 'snow', regionName: 'Frostbound Mountains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'snow', regionName: 'Astral Mountain', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
@@ -226,7 +226,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Blazehowl - Volcanic areas (example fire Pal)
-  "111": {
+  "Blazehowl": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
@@ -239,7 +239,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   // In a full implementation, all 137 Pals would have habitat data
 
   // Pengullet (10) - Water/Ice areas
-  "10": {
+  "Pengullet": {
     habitats: [
       { biome: 'lake', regionName: 'East Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'lake', regionName: 'West Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -250,7 +250,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Penking (11) - Water/Ice areas (rarity 6)
-  "11": {
+  "Penking": {
     habitats: [
       { biome: 'lake', regionName: 'East Lake', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'lake', regionName: 'West Lake', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -261,7 +261,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Jolthog (12) - Electric areas
-  "12": {
+  "Jolthog": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['night'] },
@@ -271,7 +271,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Gumoss (13) - Grass/Ground areas
-  "13": {
+  "Gumoss": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -282,7 +282,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Vixy (14) - Neutral areas
-  "14": {
+  "Vixy": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -292,7 +292,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Hoocrates (15) - Dark areas
-  "15": {
+  "Hoocrates": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['night'] },
@@ -302,7 +302,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Teafant (16) - Water areas
-  "16": {
+  "Teafant": {
     habitats: [
       { biome: 'lake', regionName: 'East Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'lake', regionName: 'West Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -312,7 +312,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Depresso (17) - Dark areas
-  "17": {
+  "Depresso": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['night'] },
@@ -322,7 +322,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Daedream (19) - Dark areas
-  "19": {
+  "Daedream": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['night'] },
@@ -332,7 +332,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Rushoar (20) - Ground areas
-  "20": {
+  "Rushoar": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -343,7 +343,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Nox (21) - Dark areas (rarity 6)
-  "21": {
+  "Nox": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'uncommon', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'rare', timeOfDay: ['night'] },
@@ -354,7 +354,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Fuddler (22) - Ground areas
-  "22": {
+  "Fuddler": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -365,7 +365,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Killamari (23) - Dark areas
-  "23": {
+  "Killamari": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['night'] },
@@ -375,7 +375,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Mau (24) - Dark areas
-  "24": {
+  "Mau": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
@@ -385,7 +385,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Direhowl (26) - Neutral areas
-  "26": {
+  "Direhowl": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -395,7 +395,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Tocotoco (27) - Neutral areas
-  "27": {
+  "Tocotoco": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -405,7 +405,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Flopie (28) - Grass areas
-  "28": {
+  "Flopie": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -416,7 +416,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Mozzarina (29) - Neutral areas
-  "29": {
+  "Mozzarina": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -426,7 +426,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Bristla (30) - Grass areas
-  "30": {
+  "Bristla": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -437,7 +437,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Gobfin (31) - Water areas
-  "31": {
+  "Gobfin": {
     habitats: [
       { biome: 'lake', regionName: 'East Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'lake', regionName: 'West Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -447,7 +447,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Hangyu (32) - Ground areas
-  "32": {
+  "Hangyu": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -458,7 +458,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Mossanda (33) - Grass areas (rarity 6)
-  "33": {
+  "Mossanda": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -469,7 +469,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Woolipop (34) - Neutral areas
-  "34": {
+  "Woolipop": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -480,7 +480,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Melpaca (36) - Neutral areas
-  "36": {
+  "Melpaca": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -490,7 +490,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Eikthyrdeer (37) - Neutral areas
-  "37": {
+  "Eikthyrdeer": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -501,7 +501,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Nitewing (38) - Neutral areas
-  "38": {
+  "Nitewing": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -511,7 +511,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Ribbuny (39) - Neutral areas
-  "39": {
+  "Ribbuny": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -521,7 +521,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Incineram (40) - Fire/Dark areas
-  "40": {
+  "Incineram": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
@@ -532,7 +532,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Cinnamoth (41) - Grass areas
-  "41": {
+  "Cinnamoth": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -543,7 +543,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Arsox (42) - Fire areas
-  "42": {
+  "Arsox": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -554,7 +554,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Dumud (43) - Ground areas
-  "43": {
+  "Dumud": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -565,7 +565,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Cawgnito (44) - Dark areas
-  "44": {
+  "Cawgnito": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['night'] },
@@ -575,7 +575,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Loupmoon (46) - Dark areas
-  "46": {
+  "Loupmoon": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['night'] },
@@ -585,7 +585,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Galeclaw (47) - Neutral areas
-  "47": {
+  "Galeclaw": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -595,7 +595,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Robinquill (48) - Grass areas
-  "48": {
+  "Robinquill": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -606,7 +606,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Gorirat (49) - Neutral areas
-  "49": {
+  "Gorirat": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -617,7 +617,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Beegarde (50) - Grass areas
-  "50": {
+  "Beegarde": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -628,7 +628,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Elizabee (51) - Grass areas (rarity 8)
-  "51": {
+  "Elizabee": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -639,7 +639,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Grintale (52) - Neutral areas (rarity 6)
-  "52": {
+  "Grintale": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -650,7 +650,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Swee (53) - Ice areas
-  "53": {
+  "Swee": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -661,7 +661,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Sweepa (54) - Ice areas (rarity 6)
-  "54": {
+  "Sweepa": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -672,7 +672,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Univolt (56) - Electric areas
-  "56": {
+  "Univolt": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['night'] },
@@ -682,7 +682,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Foxcicle (57) - Ice areas
-  "57": {
+  "Foxcicle": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -693,7 +693,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Pyrin (58) - Fire areas (rarity 6)
-  "58": {
+  "Pyrin": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -704,7 +704,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Reindrix (59) - Ice areas
-  "59": {
+  "Reindrix": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -715,7 +715,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Rayhound (60) - Electric areas
-  "60": {
+  "Rayhound": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['night'] },
@@ -725,7 +725,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Kitsun (61) - Fire areas (rarity 6)
-  "61": {
+  "Kitsun": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -736,28 +736,11 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Dazzi (62) - Electric areas
-  "62": {
-    habitats: [
-      { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
-      { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
-      { biome: 'urban', regionName: 'Plateau of Beginnings', commonness: 'uncommon', timeOfDay: ['day'] }
-    ],
-    notableLocations: ['East Plains', 'West Plains', 'Plateau of Beginnings']
-  },
 
   // Lunaris (63) - Neutral areas (rarity 6)
-  "63": {
-    habitats: [
-      { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['day'] },
-      { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['day'] },
-      { biome: 'forest', regionName: 'Whispering Woods', commonness: 'rare', timeOfDay: ['day'] },
-      { biome: 'forest', regionName: 'Ancient Forest', commonness: 'very rare', timeOfDay: ['night'] }
-    ],
-    notableLocations: ['East Plains', 'West Plains', 'Whispering Woods', 'Ancient Forest']
-  },
 
   // Dinossom (64) - Grass/Dragon areas
-  "64": {
+  "Dinossom": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -768,7 +751,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Maraith (66) - Dark areas (rarity 6)
-  "66": {
+  "Maraith": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'uncommon', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'rare', timeOfDay: ['night'] },
@@ -778,7 +761,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Digtoise (67) - Ground areas
-  "67": {
+  "Digtoise": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -789,7 +772,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Tombat (68) - Dark areas
-  "68": {
+  "Tombat": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['night'] },
@@ -799,7 +782,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Lovander (69) - Neutral areas
-  "69": {
+  "Lovander": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -809,7 +792,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Flambelle (70) - Fire areas
-  "70": {
+  "Flambelle": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
@@ -820,18 +803,9 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Vanwyrm (71) - Fire/Dark areas
-  "71": {
-    habitats: [
-      { biome: 'volcanic', regionName: 'Volcano', commonness: 'common', timeOfDay: ['day', 'night'] },
-      { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'uncommon', timeOfDay: ['day'] },
-      { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['night'] },
-      { biome: 'grassland', regionName: 'East Plains', commonness: 'rare', timeOfDay: ['day'] }
-    ],
-    notableLocations: ['Volcano', 'Crater Lake', 'Ancient Forest', 'East Plains']
-  },
 
   // Bushi (72) - Fire areas (rarity 7)
-  "72": {
+  "Bushi": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -842,7 +816,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Beakon (73) - Electric areas (rarity 6)
-  "73": {
+  "Beakon": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['night'] },
@@ -852,7 +826,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Ragnahawk (74) - Fire areas (rarity 7)
-  "74": {
+  "Ragnahawk": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -863,7 +837,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Wixen (76) - Fire areas
-  "76": {
+  "Wixen": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
@@ -874,7 +848,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Verdash (77) - Grass areas (rarity 8)
-  "77": {
+  "Verdash": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -885,7 +859,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Vaelet (78) - Grass areas (rarity 8)
-  "78": {
+  "Vaelet": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -896,7 +870,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Sibelyx (79) - Ice areas (rarity 7)
-  "79": {
+  "Sibelyx": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -907,7 +881,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Elphidran (80) - Dragon areas (rarity 7)
-  "80": {
+  "Elphidran": {
     habitats: [
       { biome: 'mountain', regionName: 'Mount Obsidian', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'mountain', regionName: 'Astral Mountain', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -918,7 +892,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Kelpsea (81) - Water areas
-  "81": {
+  "Kelpsea": {
     habitats: [
       { biome: 'lake', regionName: 'East Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'lake', regionName: 'West Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -928,7 +902,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Azurobe (82) - Water/Dragon areas (rarity 7)
-  "82": {
+  "Azurobe": {
     habitats: [
       { biome: 'lake', regionName: 'East Lake', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'lake', regionName: 'West Lake', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -939,7 +913,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Cryolinx (83) - Ice areas (rarity 7)
-  "83": {
+  "Cryolinx": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -950,18 +924,9 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Blazehowl (84) - Fire areas (rarity 7)
-  "84": {
-    habitats: [
-      { biome: 'volcanic', regionName: 'Volcano', commonness: 'uncommon', timeOfDay: ['day'] },
-      { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'rare', timeOfDay: ['day', 'night'] },
-      { biome: 'grassland', regionName: 'Desert Zone', commonness: 'rare', timeOfDay: ['day'] },
-      { biome: 'grassland', regionName: 'East Plains', commonness: 'very rare', timeOfDay: ['night'] }
-    ],
-    notableLocations: ['Volcano', 'Crater Lake', 'Desert Zone', 'East Plains']
-  },
 
   // Broncherry (86) - Grass areas (rarity 7)
-  "86": {
+  "Broncherry": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -972,7 +937,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Petallia (87) - Grass areas (rarity 8)
-  "87": {
+  "Petallia": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -983,7 +948,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Reptyro (88) - Fire/Ground areas (rarity 6)
-  "88": {
+  "Reptyro": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -994,7 +959,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Kingpaca (89) - Neutral areas (rarity 8)
-  "89": {
+  "Kingpaca": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -1005,7 +970,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Mammorest (90) - Grass areas (rarity 8)
-  "90": {
+  "Mammorest": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -1016,7 +981,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Wumpo (91) - Ice areas (rarity 7)
-  "91": {
+  "Wumpo": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -1027,7 +992,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Warsect (92) - Grass/Ground areas (rarity 8)
-  "92": {
+  "Warsect": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -1038,7 +1003,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Fenglope (93) - Neutral areas
-  "93": {
+  "Fenglope": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -1048,7 +1013,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Felbat (94) - Dark areas (rarity 6)
-  "94": {
+  "Felbat": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['night'] },
@@ -1058,7 +1023,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Blazamut (96) - Fire areas (rarity 9)
-  "96": {
+  "Blazamut": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'rare', timeOfDay: ['day'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'very rare', timeOfDay: ['day', 'night'] },
@@ -1069,7 +1034,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Helzephyr (97) - Dark areas (rarity 7)
-  "97": {
+  "Helzephyr": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'uncommon', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'rare', timeOfDay: ['night'] },
@@ -1079,7 +1044,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Astegon (98) - Dragon/Dark areas (rarity 9)
-  "98": {
+  "Astegon": {
     habitats: [
       { biome: 'mountain', regionName: 'Mount Obsidian', commonness: 'very rare', timeOfDay: ['day'] },
       { biome: 'mountain', regionName: 'Astral Mountain', commonness: 'very rare', timeOfDay: ['night'] },
@@ -1090,7 +1055,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Menasting (99) - Dark/Ground areas (rarity 9)
-  "99": {
+  "Menasting": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'very rare', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'very rare', timeOfDay: ['night'] },
@@ -1101,7 +1066,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Anubis (100) - Ground areas (rarity 10)
-  "100": {
+  "Anubis": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'very rare', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'very rare', timeOfDay: ['day'] },
@@ -1112,7 +1077,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Jormuntide (101) - Dragon/Water areas (rarity 8)
-  "101": {
+  "Jormuntide": {
     habitats: [
       { biome: 'mountain', regionName: 'Mount Obsidian', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'mountain', regionName: 'Astral Mountain', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -1124,7 +1089,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Suzaku (102) - Fire areas (rarity 8)
-  "102": {
+  "Suzaku": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -1135,7 +1100,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Lyleen (104) - Grass areas (rarity 9)
-  "104": {
+  "Lyleen": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'very rare', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'very rare', timeOfDay: ['day'] },
@@ -1146,7 +1111,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Orserk (106) - Dragon/Electric areas (rarity 9)
-  "106": {
+  "Orserk": {
     habitats: [
       { biome: 'mountain', regionName: 'Mount Obsidian', commonness: 'very rare', timeOfDay: ['day'] },
       { biome: 'mountain', regionName: 'Astral Mountain', commonness: 'very rare', timeOfDay: ['night'] },
@@ -1157,7 +1122,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Shadowbeak (107) - Dark areas (rarity 10)
-  "107": {
+  "Shadowbeak": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'very rare', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'very rare', timeOfDay: ['night'] },
@@ -1167,7 +1132,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Paladius (108) - Neutral areas (rarity 20)
-  "108": {
+  "Paladius": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'very rare', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'very rare', timeOfDay: ['day'] },
@@ -1178,7 +1143,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Frostallion (110) - Ice areas (rarity 20)
-  "110": {
+  "Frostallion": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'very rare', timeOfDay: ['day'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'very rare', timeOfDay: ['day', 'night'] },
@@ -1189,14 +1154,14 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Additional pals with habitat data
-  "18": { // Vixy - Grassland areas
+  "Cremis": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['East Plains', 'West Plains']
   },
-  "25": { // Celaray - Water areas
+  "Celaray": {
     habitats: [
       { biome: 'lake', regionName: 'East Lake', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'lake', regionName: 'West Lake', commonness: 'common', timeOfDay: ['day'] },
@@ -1204,7 +1169,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
     ],
     notableLocations: ['East Lake', 'West Lake', 'Riverbank']
   },
-  "35": { // Caprity - Grassland areas
+  "Caprity": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -1212,21 +1177,21 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
     ],
     notableLocations: ['East Plains', 'West Plains', 'Plateau of Beginnings']
   },
-  "45": { // Leezpunk - Forest areas
+  "Leezpunk": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['Whispering Woods', 'Ancient Forest']
   },
-  "55": { // Chillet - Ice areas
+  "Chillet": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['Frostbound Mountains', 'Astral Mountain']
   },
-  "65": { // Surfent - Water areas
+  "Surfent": {
     habitats: [
       { biome: 'lake', regionName: 'East Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'lake', regionName: 'West Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -1234,14 +1199,14 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
     ],
     notableLocations: ['East Lake', 'West Lake', 'Riverbank']
   },
-  "75": { // Katress - Forest areas
+  "Katress": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['Whispering Woods', 'Ancient Forest']
   },
-  "85": { // Relaxaurus - Water areas
+  "Relaxaurus": {
     habitats: [
       { biome: 'lake', regionName: 'East Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'lake', regionName: 'West Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -1249,7 +1214,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
     ],
     notableLocations: ['East Lake', 'West Lake', 'Riverbank']
   },
-  "95": { // Quivern - Mountain areas
+  "Quivern": {
     habitats: [
       { biome: 'mountain', regionName: 'Mount Obsidian', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'mountain', regionName: 'Astral Mountain', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -1257,7 +1222,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
     ],
     notableLocations: ['Mount Obsidian', 'Astral Mountain', 'Ancient Forest']
   },
-  "105": { // Faleris - Volcanic areas
+  "Faleris": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
@@ -1265,14 +1230,14 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
     ],
     notableLocations: ['Volcano', 'Crater Lake', 'Desert Zone']
   },
-  "115": { // Leezpunk Ignis - Grassland areas
+  "Hangyu Cryst": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
     ],
     notableLocations: ['East Plains', 'West Plains']
   },
-  "125": { // Elphidran Aqua - Water areas
+  "Elphidran Aqua": {
     habitats: [
       { biome: 'lake', regionName: 'East Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'lake', regionName: 'West Lake', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -1280,7 +1245,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
     ],
     notableLocations: ['East Lake', 'West Lake', 'Riverbank']
   },
-  "135": { // Suzaku Aqua - Water areas
+  "Suzaku Aqua": {
     habitats: [
       { biome: 'lake', regionName: 'East Lake', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'lake', regionName: 'West Lake', commonness: 'common', timeOfDay: ['day'] },
@@ -1290,7 +1255,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Jolthog Cryst (112) - Ice areas (based on Jolthog)
-  "112": {
+  "Jolthog Cryst": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -1301,7 +1266,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Mau Cryst (113) - Ice areas (based on Mau)
-  "113": {
+  "Mau Cryst": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -1312,7 +1277,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Gobfin Ignis (114) - Fire areas (based on Gobfin)
-  "114": {
+  "Gobfin Ignis": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
@@ -1323,7 +1288,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Mossanda Lux (116) - Electric areas (based on Mossanda)
-  "116": {
+  "Mossanda Lux": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['night'] },
@@ -1333,7 +1298,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Eikthyrdeer Terra (117) - Ground areas (based on Eikthyrdeer)
-  "117": {
+  "Eikthyrdeer Terra": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -1344,7 +1309,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Incineram Noct (118) - Dark areas (based on Incineram)
-  "118": {
+  "Incineram Noct": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['night'] },
@@ -1354,7 +1319,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Leezpunk Ignis (119) - Fire areas (based on Leezpunk)
-  "119": {
+  "Leezpunk Ignis": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -1363,7 +1328,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Robinquill Terra (120) - Grass/Ground areas (based on Robinquill)
-  "120": {
+  "Robinquill Terra": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -1374,7 +1339,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Pyrin Noct (121) - Dark areas (based on Pyrin)
-  "121": {
+  "Pyrin Noct": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['night'] },
@@ -1384,7 +1349,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Dinossom Lux (122) - Electric/Dragon areas (based on Dinossom)
-  "122": {
+  "Dinossom Lux": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day'] },
@@ -1395,7 +1360,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Surfent Terra (123) - Ground areas (based on Surfent)
-  "123": {
+  "Surfent Terra": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -1405,7 +1370,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Vanwyrm Cryst (124) - Ice/Dark areas (based on Vanwyrm)
-  "124": {
+  "Vanwyrm Cryst": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -1416,7 +1381,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Kelpsea Ignis (126) - Fire areas (based on Kelpsea)
-  "126": {
+  "Kelpsea Ignis": {
     habitats: [
       { biome: 'volcanic', regionName: 'Volcano', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'volcanic', regionName: 'Crater Lake', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
@@ -1427,7 +1392,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Blazehowl Noct (127) - Dark areas (based on Blazehowl)
-  "127": {
+  "Blazehowl Noct": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'common', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'uncommon', timeOfDay: ['night'] },
@@ -1437,7 +1402,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Relaxaurus Lux (128) - Dragon/Electric areas (based on Relaxaurus)
-  "128": {
+  "Relaxaurus Lux": {
     habitats: [
       { biome: 'mountain', regionName: 'Mount Obsidian', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'mountain', regionName: 'Astral Mountain', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -1448,7 +1413,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Broncherry Aqua (129) - Grass/Water areas (based on Broncherry)
-  "129": {
+  "Broncherry Aqua": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'common', timeOfDay: ['day', 'night'] },
@@ -1458,7 +1423,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Reptyro Cryst (130) - Ice/Ground areas (based on Reptyro)
-  "130": {
+  "Reptyro Cryst": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'common', timeOfDay: ['day'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -1469,7 +1434,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Kingpaca Cryst (131) - Ice areas (based on Kingpaca)
-  "131": {
+  "Kingpaca Cryst": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'very rare', timeOfDay: ['day'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'very rare', timeOfDay: ['day', 'night'] },
@@ -1480,7 +1445,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Mammorest Cryst (132) - Ice areas (based on Mammorest)
-  "132": {
+  "Mammorest Cryst": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'very rare', timeOfDay: ['day'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'very rare', timeOfDay: ['day', 'night'] },
@@ -1491,7 +1456,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Wumpo Botan (133) - Grass areas (based on Wumpo)
-  "133": {
+  "Wumpo Botan": {
     habitats: [
       { biome: 'grassland', regionName: 'East Plains', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'grassland', regionName: 'West Plains', commonness: 'uncommon', timeOfDay: ['day'] },
@@ -1502,7 +1467,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Jormuntide Ignis (134) - Dragon/Fire areas (based on Jormuntide)
-  "134": {
+  "Jormuntide Ignis": {
     habitats: [
       { biome: 'mountain', regionName: 'Mount Obsidian', commonness: 'uncommon', timeOfDay: ['day'] },
       { biome: 'mountain', regionName: 'Astral Mountain', commonness: 'rare', timeOfDay: ['day', 'night'] },
@@ -1513,7 +1478,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Lyleen Noct (136) - Dark areas (based on Lyleen)
-  "136": {
+  "Lyleen Noct": {
     habitats: [
       { biome: 'forest', regionName: 'Whispering Woods', commonness: 'very rare', timeOfDay: ['night'] },
       { biome: 'forest', regionName: 'Ancient Forest', commonness: 'very rare', timeOfDay: ['night'] },
@@ -1523,7 +1488,7 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // Frostallion Noct (137) - Dark areas (based on Frostallion)
-  "137": {
+  "Frostallion Noct": {
     habitats: [
       { biome: 'ice', regionName: 'Frostbound Mountains', commonness: 'very rare', timeOfDay: ['day'] },
       { biome: 'ice', regionName: 'Astral Mountain', commonness: 'very rare', timeOfDay: ['day', 'night'] },
@@ -1534,31 +1499,31 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // --- Palworld 1.0 regions (Sunreach sky islands) ---
-  "138": {
+  "Lunaris": {
     habitats: [
       { biome: 'sky', regionName: 'Sunreach', commonness: 'very rare', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['Sunreach']
   },
-  "145": {
+  "Loomen": {
     habitats: [
       { biome: 'sky', regionName: 'Sunreach', commonness: 'rare', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['Sunreach']
   },
-  "148": {
+  "Wistella": {
     habitats: [
       { biome: 'sky', regionName: 'Sunreach', commonness: 'rare', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['Sunreach']
   },
-  "151": {
+  "Dazzi": {
     habitats: [
       { biome: 'sky', regionName: 'Sunreach', commonness: 'rare', timeOfDay: ['day'] },
     ],
     notableLocations: ['Sunreach']
   },
-  "152": {
+  "Solenne": {
     habitats: [
       { biome: 'sky', regionName: 'Sunreach', commonness: 'very rare', timeOfDay: ['day', 'night'] },
     ],
@@ -1567,49 +1532,49 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
 
   // --- Palworld 1.0 — World Tree (pals.ts habitats are ignored by getPalMapData) ---
   // 101/109/136 already have sample entries above; their World Tree spawn was appended there.
-  "177": {
+  "Panthalus": {
     habitats: [
       { biome: 'river', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['World Tree']
   },
-  "183": {
+  "Astralym": {
     habitats: [
       { biome: 'mountain', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['World Tree']
   },
-  "203": {
+  "Tetroise Primo": {
     habitats: [
       { biome: 'mountain', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['World Tree']
   },
-  "204": {
+  "Nitemary Botan": {
     habitats: [
       { biome: 'forest', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['World Tree']
   },
-  "206": {
+  "Celesdir Noct": {
     habitats: [
       { biome: 'ruins', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['World Tree']
   },
-  "207": {
+  "Knocklem Ignis": {
     habitats: [
       { biome: 'volcanic', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['World Tree']
   },
-  "209": {
+  "Solmora Lux": {
     habitats: [
       { biome: 'mountain', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['World Tree']
   },
-  "210": {
+  "Eidrolon Ignis": {
     habitats: [
       { biome: 'volcanic', regionName: 'World Tree', commonness: 'very rare', timeOfDay: ['day', 'night'] },
     ],
@@ -1617,43 +1582,43 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // --- Palworld 1.0 new islands ---
-  "193": {
+  "Gloopie Primo": {
     habitats: [
       { biome: 'jungle', regionName: 'Verdant Cradle', commonness: 'common', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['Verdant Cradle']
   },
-  "198": {
+  "Skutlass Ignis": {
     habitats: [
       { biome: 'volcanic', regionName: 'Ember Shoals', commonness: 'common', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['Ember Shoals']
   },
-  "194": {
+  "Polapup Terra": {
     habitats: [
       { biome: 'desert', regionName: 'Dune Refuge', commonness: 'common', timeOfDay: ['day'] },
     ],
     notableLocations: ['Dune Refuge']
   },
-  "196": {
+  "Needoll Noct": {
     habitats: [
       { biome: 'ruins', regionName: 'Ruin Hollow', commonness: 'common', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['Ruin Hollow']
   },
-  "200": {
+  "Pierdon Cryst": {
     habitats: [
       { biome: 'ice', regionName: 'Frost Harbor', commonness: 'common', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['Frost Harbor']
   },
-  "197": {
+  "Moldron Cryst": {
     habitats: [
       { biome: 'ice', regionName: 'Glacier Reach', commonness: 'uncommon', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['Glacier Reach']
   },
-  "202": {
+  "Prixter Lux": {
     habitats: [
       { biome: 'coastal', regionName: 'Storm Cape', commonness: 'common', timeOfDay: ['day', 'night'] },
     ],
@@ -1661,13 +1626,13 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   },
 
   // --- Reworked Wildlife Sanctuaries ---
-  "199": {
+  "Starryon Primo": {
     habitats: [
       { biome: 'mountain', regionName: 'Wildlife Sanctuary No. 4', commonness: 'very rare', timeOfDay: ['day', 'night'] },
     ],
     notableLocations: ['Wildlife Sanctuary No. 4']
   },
-  "208": {
+  "Snock Terra": {
     habitats: [
       { biome: 'mountain', regionName: 'Wildlife Sanctuary No. 5', commonness: 'very rare', timeOfDay: ['day', 'night'] },
     ],
@@ -1675,10 +1640,13 @@ export const PAL_MAP_DATA: Partial<Record<string, { habitats: Habitat[]; notable
   }
 };
 
-// Helper function to get map data for a Pal
+// Helper function to get map data for a Pal.
+// PAL_MAP_DATA is keyed by Pal NAME (stable across data regenerations);
+// positional pals.ts ids change whenever the roster is re-sorted, which is
+// how this table silently drifted onto the wrong Pals before the 1.0 fix.
 export function getPalMapData(palId: string): PalWithMap | undefined {
   const baseData = PALS.find(pal => pal.id === palId);
-  const mapData = PAL_MAP_DATA[palId];
+  const mapData = baseData ? PAL_MAP_DATA[baseData.name] : undefined;
 
   if (!baseData) {
     return undefined;

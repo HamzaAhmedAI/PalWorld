@@ -1,50 +1,32 @@
-// 1.0 correction layer for the breeding engine (spec D1/D2, Phase 2).
-// These are hand-verified, 1.0-specific overrides and survive regeneration of
-// data/pals.ts. See data/SOURCING.md for the merge order.
+// Breeding classification helpers (Palworld 1.0).
+//
+// As of the 2026-10-22 data fix, the hand-maintained override tables are
+// gone: unique combos are generated from the official DT_PalCombiUnique
+// extraction in data/specials.ts, types/ranks come straight from the 1.0
+// game-file dataset in data/source/, and "true-breed" status is DERIVED
+// from the data instead of hand-listed:
+//
+// A Pal is breed-locked iff (a) the power-average formula can never produce
+// it (not in Pal.formulaPool) and (b) no unique combo produces it. Such a
+// Pal can only be bred from two parents of its own species.
 
+import { PALS } from "./pals";
 import type { Pal } from "./pals";
+import { UNIQUE_COMBOS, GENDER_DEPENDENT_COMBOS } from "./specials";
 
-// Hand-verified 1.0 breeding combos. Key format is "ParentA+ParentB" (order-independent
-// lookup is performed in lib/breeding.ts). Stale pre-1.0 overrides removed:
-//   - "Penking+Bushi" -> "Anubis"  (1.0: resolves to Sibelyx; handled by the power ladder / D1)
-//   - "Relaxaurus+Sparkit" -> "Orserk"  (1.0: Orserk is true-breed only; D2)
-export const UNIQUE_COMBOS: Record<string, string> = {
-  "Nitewing+Vanwyrm": "Anubis",
-  "Mossanda+Vanwyrm": "Rayhound",
-  "Penking+Bushi": "Sibelyx",
-};
+const comboChildren = new Set<string>([
+  ...Object.values(UNIQUE_COMBOS),
+  ...GENDER_DEPENDENT_COMBOS.flatMap((g) => [
+    g.defaultChild,
+    ...g.genderChildren,
+  ]),
+]);
 
-// Tower bosses / legendaries that only breed same + same (spec §3).
-// If exactly one parent is in this group, the result can NEVER be a group member
-// (the engine falls through to the power rule). If both parents are the same group
-// member, the result is that Pal (true-breed).
-export const TRUE_BREED_GROUP: string[] = [
-  "Faleris",
-  "Shadowbeak",
-  "Grizzbolt",
-  "Orserk",
-  "Lyleen",
-  "Frostallion",
-  "Jetragon",
-  "Paladius",
-  "Necromus",
-  "Neptilius",
-  "Selyne",
-  "Bastigor",
-  "Bellanoir Libero",
-  "Blazamut Ryu",
-  "Mimog",
-  "Xenolord",
-  "Chikipi",
-];
+export const TRUE_BREED_GROUP: string[] = PALS.filter(
+  (p) => !p.formulaPool && !comboChildren.has(p.name),
+).map((p) => p.name);
 
-// 1.0 type corrections applied to PALS at build time (spec D6 / P1.3).
-// Mirror of TYPE_OVERRIDES in scripts/build-pals.mjs — kept here as the canonical record.
-export const TYPE_OVERRIDES: Record<string, { type1?: string; type2?: string }> = {
-  Lovander: { type1: "Dark" },
-};
-
-// Convenience: is this Pal in the true-breed group?
+// Convenience: is this Pal only obtainable (by breeding) from same + same?
 export function isTrueBreed(pal: Pick<Pal, "name">): boolean {
   return TRUE_BREED_GROUP.includes(pal.name);
 }

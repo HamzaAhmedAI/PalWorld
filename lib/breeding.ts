@@ -1,48 +1,72 @@
 import { PALS, UNIQUE_COMBOS, Pal } from "../data/pals";
+import { GENDER_DEPENDENT_COMBOS } from "../data/specials";
 import { TRUE_BREED_GROUP } from "../data/overrides";
 
+// Palworld 1.0 breeding engine (data fix, 2026-10-22).
+// Validated against the full verified 1.0 breeding matrix
+// (data/source/combos-1.0.json) by lib/breeding-matrix.test.ts — every one
+// of the 44,551 unordered pairs reproduces the matrix result.
+//
+// Rules, in order:
+//   1. Same species always breeds itself.
+//   2. The gender-dependent pair (Katress + Wixen) has no fixed matrix
+//      outcome; the engine returns its primary child (Katress Ignis) and
+//      data/specials.ts records both gender-specific children.
+//   3. Official unique combos (DT_PalCombiUnique) override the formula.
+//   4. Power rule: target = floor((A + B + 1) / 2) over 1.0 CombiRank
+//      (Pal.breedingPower); the child is the FORMULA-POOL Pal closest to
+//      the target. Pals outside the pool (variants, legendaries, Terraria
+//      crossover, ...) can never be produced by the formula — they come
+//      only from rule 1, 2 or 3. On an equal-distance tie the HIGHER
+//      CombiRank wins (the game's CombiDuplicatePriority behaviour,
+//      confirmed against the matrix); further ties keep PALS order
+//      (CombiRank asc, then Paldeck no.).
+
+const byNameMap = new Map(PALS.map((p) => [p.name, p]));
+const sortedPairKey = (a: string, b: string) => [a, b].sort().join("+");
+
 export function getResultingPal(parentA: Pal, parentB: Pal): Pal {
-  // 1) Hand-verified 1.0 combos (spec D1). Order-independent lookup.
-  const key1 = `${parentA.name}+${parentB.name}`;
-  const key2 = `${parentB.name}+${parentA.name}`;
-  const uniqueName = UNIQUE_COMBOS[key1] || UNIQUE_COMBOS[key2];
+  // 1) Same species always breeds same species.
+  if (parentA.name === parentB.name) return parentA;
+
+  // 2) Gender-dependent pair: default (matrix) outcome.
+  for (const g of GENDER_DEPENDENT_COMBOS) {
+    if (sortedPairKey(parentA.name, parentB.name) === sortedPairKey(...g.parents)) {
+      const found = byNameMap.get(g.defaultChild);
+      if (found) return found;
+    }
+  }
+
+  // 3) Official unique combos. Order-independent lookup.
+  const uniqueName = UNIQUE_COMBOS[sortedPairKey(parentA.name, parentB.name)];
   if (uniqueName) {
-    const found = PALS.find((p) => p.name === uniqueName);
+    const found = byNameMap.get(uniqueName);
     if (found) return found;
   }
 
-  // 2) True-breeding tower bosses / legendaries (spec D2).
-  //    same + same -> that Pal. Any other pair can NEVER yield a group member;
-  //    the power rule below skips group members entirely.
-  const aInGroup = TRUE_BREED_GROUP.includes(parentA.name);
-  const bInGroup = TRUE_BREED_GROUP.includes(parentB.name);
-  if (aInGroup && bInGroup && parentA.name === parentB.name) {
-    return parentA;
-  }
-
-  // 3) Same species always breeds same species.
-  if (parentA.name === parentB.name) return parentA;
-
-  // 4) Power rule: floor((A + B + 1) / 2), result = closest breedingPower.
-  //    Tie-break = first in PALS array order (canonical breeding index; P2.1).
-  //    Group members are skipped: they can only come from same + same (D2).
+  // 4) Power rule over the formula pool only.
   const targetPower = Math.floor(
     (parentA.breedingPower + parentB.breedingPower + 1) / 2,
   );
 
-  let closestPal = PALS[0];
+  let closestPal: Pal | null = null;
   let minDiff = Number.POSITIVE_INFINITY;
 
   for (const pal of PALS) {
-    if (TRUE_BREED_GROUP.includes(pal.name)) continue;
+    if (!pal.formulaPool) continue;
     const diff = Math.abs(pal.breedingPower - targetPower);
-    if (diff < minDiff) {
+    if (
+      diff < minDiff ||
+      (diff === minDiff &&
+        closestPal !== null &&
+        pal.breedingPower > closestPal.breedingPower)
+    ) {
       minDiff = diff;
-      closestPal = pal; // first match in array order wins ties
+      closestPal = pal;
     }
   }
 
-  return closestPal;
+  return closestPal ?? parentA;
 }
 
 // ---------------------------------------------------------------------------
@@ -142,12 +166,13 @@ export type CakeType = "none" | "mushroom" | "vegetable" | "deluxe" | "special";
  * - Baseline (no cake / regular cake): ~1%
  * - Deluxe / Extravagant Vegetable Cake: ~3% (per 1.0 patch notes)
  * - Mushroom / Vegetable / Special cakes do NOT raise the per-egg mutation
- *   chance (Vegetable = two eggs per cycle; Special = multi-passive inheritance).
+ *   chance (Vegetable = two eggs per cycle; Special = multi-passive
+ *   inheritance), so they keep the ~1% baseline — they do not remove it.
+ *   (Fixed 2026-10-22: these previously returned 0, i.e. "never mutates".)
  */
 export function mutationChance(cake: CakeType): number {
   if (cake === "deluxe") return 0.03;
-  if (cake === "none") return 0.01;
-  return 0;
+  return 0.01;
 }
 
 /**

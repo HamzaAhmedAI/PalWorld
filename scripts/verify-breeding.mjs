@@ -13,7 +13,13 @@ const root = resolve(__dirname, "..");
 
 const result = spawnSync(
   "npx",
-  ["vitest", "run", "lib/breeding.test.ts", "--reporter=dot"],
+  [
+    "vitest",
+    "run",
+    "lib/breeding.test.ts",
+    "lib/breeding-matrix.test.ts",
+    "--reporter=dot",
+  ],
   { cwd: root, stdio: "inherit", shell: true },
 );
 

@@ -19,26 +19,13 @@ const root = resolve(__dirname, "..");
 const outDir = resolve(root, "public/paldex");
 mkdirSync(outDir, { recursive: true });
 
-// Pull the exact new-Pal display names from the build script (single source of truth).
-const src = readFileSync(resolve(root, "scripts/build-pals.mjs"), "utf8");
-const block = src.split("const NEW_PALS_1_0 = [")[1].split("];")[0];
-const newNames = [...block.matchAll(/name:\s*"([^"]+)"/g)].map((m) => m[1]);
-
-// Also pull the 137 base Pal names from the normalized cache so the ENTIRE
-// Paldeck uses consistent complete-character Fandom art (the mlg404 paldeck
-// only has zoomed-face art for the base Pals). Same sanitization + output dir.
-const baseCache = JSON.parse(
-  readFileSync(resolve(root, "scripts/_cache/normalized-137.json"), "utf8"),
+// Pal names come from the canonical 1.0 dataset (single source of truth).
+// The whole Paldeck uses consistent complete-character Fandom art, served
+// locally from /public/paldex so production has no hotlink dependency.
+const srcPals = JSON.parse(
+  readFileSync(resolve(root, "data/source/pals-1.0.json"), "utf8"),
 );
-const baseNames = baseCache.map((p) => p.name);
-
-// Combine, de-dupe (preserve order — new first so new wins any rare collision).
-const seen = new Set();
-const names = [...newNames, ...baseNames].filter((n) => {
-  if (seen.has(n)) return false;
-  seen.add(n);
-  return true;
-});
+const names = srcPals.map((p) => p.name);
 
 // Fandom serves WebP (RIFF/WEBP magic). We accept WebP or PNG and store as .webp.
 const localPalImage = (name) => `/paldex/${name.replace(/[^A-Za-z0-9]/g, "")}.webp`;

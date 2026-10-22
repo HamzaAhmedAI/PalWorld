@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import PalsPageClient from './PalsClient';
 
 export const metadata: Metadata = {
-  title: 'Paldex — All 210 Palworld Pals (1.0)',
-  description: 'Browse all 210 Pals in Palworld 1.0. Filter by type, sort by rarity, and find the best Pals for breeding combinations, passive skills, and IV optimization.',
+  title: 'Paldex — All 298 Palworld Pals (1.0)',
+  description: 'Browse all 298 Pals in Palworld 1.0. Filter by type, sort by rarity, and find the best Pals for breeding combinations, passive skills, and IV optimization.',
   keywords: [
     'palworld paldex',
     'all palworld pals',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'palworld breeding calculator 2026',
   ],
   openGraph: {
-    title: 'Paldex — All 210 Palworld Pals (1.0) | PalBreed.AI',
+    title: 'Paldex — All 298 Palworld Pals (1.0) | PalBreed.AI',
     description: 'Browse every Pal in Palworld with type, rarity and breeding data.',
     url: 'https://palbreedai.com/pals',
   },

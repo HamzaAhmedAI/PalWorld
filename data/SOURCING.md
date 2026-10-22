@@ -1,66 +1,83 @@
 # Palworld Data Sourcing (`SOURCING.md`)
 
-This file documents the canonical data source for `data/pals.ts` and the merge
-order used by the regeneration pipeline (`scripts/fetch-1-0-data.mjs` →
-`scripts/build-pals.mjs`). It exists so the 209-Pal table is **never hand-maintained**
-after a patch.
+This file documents the canonical data source for `data/pals.ts` and the
+pipeline that regenerates it (`scripts/fetch-1-0-data.mjs` →
+`scripts/build-pals.mjs`). It exists so the Pal table is **never
+hand-maintained** after a patch.
 
-## Locked canonical source (P0.1)
+## Canonical source (locked 2026-10-22, data fix)
 
-Primary: **`mlg404/palworld-paldex-api`** — already used by the site for Pal deck
-images (`raw.githubusercontent.com/mlg404/palworld-paldex-api/main/public/images/paldeck/<key>.png`).
-It exposes, per Pal:
+The dataset committed under `data/source/` is **palworldcalc-20260730-298**
+(game version 1.0, Steam build 24575149), published by palworldcalc.com at
+`https://palworldcalc.com/data/` and pinned by SHA-256 in
+`scripts/fetch-1-0-data.mjs`:
 
-- `name`, `key` (paldeck image key, e.g. `001`, `012B`)
-- `types[]` (`neutral`, `grass`, `fire`, `water`, `electric`, `ice`, `ground`, `dark`, `dragon`)
-- `breeding.rank` — the canonical **breeding power** (scale 10–1500, unique per Pal)
-- `rarity` (1–20)
-- `suitability[]` — per-job work levels (`handiwork`, `transporting`, `farming`, `gathering`,
-  `mining`, `planting`, `lumbering`, `medicine_production`, `kindling`, `watering`,
-  `generating_electricity`, `cooling`)
-- `drops[]`, `aura` (partner skill name + description), `description`, `stats` (hp/attack/defense/...)
-- `genus`, `price`, `size`, `maps`
+| File | Contents | SHA-256 (prefix) |
+| --- | --- | --- |
+| `pals-1.0.json` | 298 Pals (287 Paldeck + 11 Terraria crossover): name, Paldeck no., elements, rarity, CombiRank, base stats, work suitability, description, new-in-1.0 flag | `a8556fe7…` |
+| `combos-1.0.json` | Full 298×298 breeding matrix (child index per parent pair) | `aab14cb7…` |
+| `special-1.0.json` | 136 unique combos decoded from the official `DT_PalCombiUnique` DataTable, incl. the gender-locked Katress × Wixen pair | `027724c0…` |
 
-Pinned endpoint (verify before each re-run):
-`https://raw.githubusercontent.com/mlg404/palworld-paldex-api/main/src/pals.json`
-`https://raw.githubusercontent.com/mlg404/palworld-paldex-api/main/src/breeding.json`
+Upstream provenance (per palworldcalc's data page): per-Pal metadata and the
+matrix come from the 1.0 game files via `oMaN-Rod/palworld-save-pal` and
+`beckerfelipee/PalworldBreedingCalculator` (AllCombos.csv); the matrix was
+cross-validated pair-by-pair against the independent `palcalc-tools`
+breeding engine — all 44,551 unordered pairs identical.
 
-## Merge order (P0.1 #3)
+### Why this source replaced the old one
 
-1. **breeding power / types / key / rarity** ← primary (paldex API). These are authoritative.
-2. **work suitability, drops, partner skill, stats, description** ← primary (paldex API).
-3. **habitats / regions** ← `data/pals.ts` existing `habitats` fields + §1.3 / Phase 8 region map.
-4. **1.0-specific corrections** ← `data/overrides.ts` (see below). This layer always wins.
+The previous pipeline built on `mlg404/palworld-paldex-api`, a **pre-1.0**
+snapshot of 137 Pals, with the 72 new 1.0 Pals hand-authored in the build
+script using **interpolated** breeding ranks. Against the verified 1.0
+matrix, that engine reproduced only ~2% of pair outcomes, the roster was
+missing 78 Pals that exist in 1.0, and many new-Pal stats were placeholders.
+All of that is replaced by the game-file dataset above.
 
-## 1.0 correction layer (`data/overrides.ts`)
+## How the build uses the source
 
-The paldex API is **pre-1.0** (137 Pals). The 72 new 1.0 Pals and the 1.0 breeding
-reshuffle are applied as overrides so they survive regeneration:
+`scripts/build-pals.mjs`:
 
-- `TYPE_OVERRIDES` — e.g. `Lovander: Neutral → Dark` (1.0 type change).
-- `UNIQUE_COMBOS` — hand-verified 1.0 combos, e.g. `Penking+Bushi → Sibelyx`.
-  Stale pre-1.0 overrides (`Penking+Bushi → Anubis`, `Relaxaurus+Sparkit → Orserk`)
-  were removed (see spec D1/D2).
-- `TRUE_BREED_GROUP` — tower bosses / legendaries that only breed `same + same`
-  (Orserk, Faleris, Shadowbeak, Grizzbolt, Lyleen, Frostallion, Jetragon, Paladius,
-  Necromus, Neptilius, Selyne, Bastigor, Bellanoir Libero, Blazamut Ryu, Mimog, Xenolord line, Chikipi).
-- `NEW_PALS_1_0` — the 72 new 1.0 Pals (47 species + 25 variants) authored from the
-  verified name list in spec §1.3. **Verification status:** names, element re-types, and
-  roles are researched; `breedingPower` ranks for new Pals are interpolated (spread across
-  the canonical 10–1500 ladder, variants near their base) because the API does not yet
-  expose 1.0 ranks. Known combos are guaranteed correct via `UNIQUE_COMBOS` + `TRUE_BREED_GROUP`
-  regardless of interpolated ranks. When a 1.0-accurate `pals.json` becomes available,
-  re-run `npm run fetch-pals && npm run build-pals` to replace interpolated values.
+1. **Roster / ranks / types / rarity / stats / work / description** ←
+   `pals-1.0.json` (authoritative). Vocabulary is mapped to this repo's
+   (`Normal`→`Neutral`, `Electricity`→`Electric`,
+   `MedicineProduction`→`medicine`, `Lumbering`→`deforesting`,
+   `GenerateElectricity`→`generating`). Lovander is Dark in the source, so
+   the old hand type-override is gone.
+2. **Unique combos** ← `special-1.0.json`, emitted to `data/specials.ts`.
+   The Katress × Wixen rows are split out into `GENDER_DEPENDENT_COMBOS`:
+   the matrix marks this pair `-1` (no fixed outcome — it depends on the
+   parents' genders); the engine's primary result is Katress Ignis, and
+   Wixen Noct is the other gender-specific child.
+3. **`Pal.formulaPool`** ← derived from `combos-1.0.json`: a Pal is in the
+   formula pool iff some non-special, mixed-species pair produces it
+   (183 Pals). The engine's power rule only ever returns pool Pals.
+4. **Enrichment** ← `data/enrichment.json` (repo-only fields the canonical
+   dataset lacks): `partnerSkill`, `drops`, `habitats`, `notableLocations`.
+   Carried over from the pre-fix `data/pals.ts` for the original roster and
+   extended with paldb.cc partner-skill text (via the mikiagent dataset)
+   for Pals that had none. Fabricated placeholder fields from the
+   hand-authored era (generic partner-skill text, `<pal>_meat` drops) were
+   dropped rather than carried over.
 
-## Reproducibility (P0.1 #4)
+## Verification
 
-Re-run order (idempotent):
+- `lib/breeding-matrix.test.ts` replays **all 44,551 unordered pairs**
+  through `getResultingPal` and asserts equality with `combos-1.0.json`.
+  `npm test` and `npm run verify-breeding` both run it. A data refresh that
+  breaks the engine fails the test suite, loudly.
+- With this dataset the formula engine (same-species → gender pair →
+  unique combos → closest-CombiRank in pool, equal-distance ties to the
+  higher CombiRank) reproduces the matrix exactly.
+
+## Reproducibility
 
 ```bash
-npm run fetch-pals   # download + normalize API -> scripts/_cache/normalized-137.json
-npm run build-pals   # merge 137 + NEW_PALS_1_0 + overrides -> data/pals.ts
-npm run verify-breeding  # assert Penking+Bushi===Sibelyx, Orserk true-breed, etc.
+npm run fetch-pals   # download + SHA-256 verify the pinned dataset
+npm run build-pals   # regenerate data/pals.ts + data/specials.ts
+npm run verify-breeding
+npm test
 ```
 
-`scripts/_cache/` is local-only and should not be committed (it is the intermediate
-"raw 1-0" artifact from spec P0.2 #4).
+If `fetch-pals` reports a checksum change, upstream published a new
+dataset: review the diff (roster/rank changes) before building, then update
+the pinned hashes in `scripts/fetch-1-0-data.mjs` and this file.
