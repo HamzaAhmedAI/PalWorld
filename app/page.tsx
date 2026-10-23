@@ -190,6 +190,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* New: Aniimo planner */}
+      <section className="py-16 bg-slate-50/50 dark:bg-black/40 border-t border-indigo-500/10 dark:border-white/5">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-center gap-6 justify-between rounded-3xl border border-indigo-500/30 bg-white dark:bg-white/5 p-8">
+            <div>
+              <p className="text-xs font-black uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-2">New game, same planner</p>
+              <h2 className="text-2xl md:text-3xl font-black text-slate-900 dark:text-white">Now covering Aniimo evolutions</h2>
+              <p className="mt-2 text-slate-600 dark:text-slate-400 max-w-xl">
+                PalBreed.AI now plans Aniimo too: every evolution path with the exact level gate,
+                evolution stone, deed or talent each step needs — all 97 Aniimo, sourced and cross-checked.
+              </p>
+            </div>
+            <a href="/aniimo" className="shrink-0 rounded-xl bg-indigo-600 px-6 py-3 text-sm font-bold text-white hover:bg-indigo-500 text-center">
+              Open the Aniimo planner
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* 1.0 Guides */}
       <section className="py-20 bg-white dark:bg-[#050505]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

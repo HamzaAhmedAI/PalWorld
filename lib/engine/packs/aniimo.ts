@@ -27,11 +27,25 @@ export const aniimoPack: GamePack = {
       kind: "evolve",
       from: [e.from],
       to: e.to,
-      conditions: e.conditions.map((c) => ({
-        kind: c.kind,
-        label: c.label,
-        value: c.value,
-      })),
+      conditions: [
+        ...e.conditions.map((c) => ({
+          kind: c.kind,
+          label: c.label,
+          value: c.value,
+        })),
+        // Honesty flag from the data layer: these evolutions are real, but
+        // no source publishes their conditions yet. Surfaced in the UI as a
+        // visible "not yet verified" chip, never silently omitted.
+        ...(e.conditionsVerified
+          ? []
+          : [
+              {
+                kind: "unverified",
+                label:
+                  "Conditions not yet verified — this evolution is confirmed, its requirements are still being sourced",
+              },
+            ]),
+      ],
     }),
   ),
   isBaseCreature: (c) => !withIncoming.has(c.id),

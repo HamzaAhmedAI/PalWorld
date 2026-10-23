@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
 import { PALS } from "@/data/pals";
 import { slugify } from "@/lib/palSlug";
+import { ANIIMO_CREATURES } from "@/data/aniimo";
+import { getAniimoSlug } from "@/lib/aniimoSlug";
 
 const BASE = "https://palbreedai.com";
 
@@ -10,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: BASE, lastModified: now, changeFrequency: "daily", priority: 1.0 },
     { url: `${BASE}/pals`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE}/aniimo`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/map`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/breeding/routes`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/tier-lists`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
@@ -52,5 +55,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...palRoutes];
+  const aniimoRoutes: MetadataRoute.Sitemap = ANIIMO_CREATURES.map((c) => ({
+    url: `${BASE}/aniimo/${getAniimoSlug(c)}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
+  return [...staticRoutes, ...palRoutes, ...aniimoRoutes];
 }
