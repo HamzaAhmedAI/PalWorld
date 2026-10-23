@@ -1,0 +1,1019 @@
+{
+ "_provenance": {
+  "source": "AniimoTools evolutions page (fan-made, hand-curated; 'official lines and community reports')",
+  "sourceUrl": "https://aniimotools.dev/evolutions/",
+  "retrievedAt": "2026-10-23",
+  "method": "Parsed from the page's server-rendered HTML (article.evl / evl__pill markup) with lxml; requirements are listed on the creature they produce (requirementsToReach). Item IDs are the game's own item IDs as linked by the source.",
+  "crossCheck": "Steps spot-checked against datamined aniimo.gg and aniidex.com species pages; agreement on levels/stones/items. One known discrepancy: aniimo.gg + aniidex add the deed 'Defeat the Alpha Scorchhowl.' to Flameruff -> Scorchhowl, which AniimoTools omits.",
+  "license": "No license published by the source; facts/values only."
+ },
+ "lineCount": 29,
+ "stepCount": 53,
+ "lines": [
+  [
+   {
+    "name": "Baleetle",
+    "slug": "baleetle",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Bouldus",
+    "slug": "bouldus",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 39",
+      "itemId": null
+     },
+     {
+      "text": "Learn passive talent [Peculiar Rock Ball].",
+      "itemId": null
+     },
+     {
+      "text": "Loam Stone",
+      "itemId": "540008"
+     }
+    ]
+   },
+   {
+    "name": "Waleetle",
+    "slug": "waleetle",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 39",
+      "itemId": null
+     },
+     {
+      "text": "Loam Stone",
+      "itemId": "540008"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Bolty",
+    "slug": "bolty",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Blazen",
+    "slug": "blazen",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 33.",
+      "itemId": null
+     },
+     {
+      "text": "Under the Blitz Tree in the Blitzwood",
+      "itemId": null
+     },
+     {
+      "text": "Roar Stone",
+      "itemId": "540007"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Bonesky",
+    "slug": "bonesky",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Fenrier",
+    "slug": "fenrier",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 24",
+      "itemId": null
+     }
+    ]
+   },
+   {
+    "name": "Glynsera",
+    "slug": "glynsera",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 34",
+      "itemId": null
+     },
+     {
+      "text": "Freeze Stone",
+      "itemId": "540006"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Budclaw",
+    "slug": "budclaw",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Shrubclaw",
+    "slug": "shrubclaw",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 21",
+      "itemId": null
+     },
+     {
+      "text": "Loam Stone",
+      "itemId": "540008"
+     }
+    ]
+   },
+   {
+    "name": "Geoclaw",
+    "slug": "geoclaw",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 21",
+      "itemId": null
+     },
+     {
+      "text": "Personality contains [Tenacious]",
+      "itemId": null
+     },
+     {
+      "text": "Freeze Stone",
+      "itemId": "540006"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Budsquire",
+    "slug": "budsquire",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Thornblade",
+    "slug": "thornblade",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 27",
+      "itemId": null
+     },
+     {
+      "text": "Defeat a Thornblade using a party that only has a Budsquire in it.",
+      "itemId": null
+     },
+     {
+      "text": "Sprout Stone",
+      "itemId": "540010"
+     }
+    ]
+   },
+   {
+    "name": "Melloblum",
+    "slug": "melloblum",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 27",
+      "itemId": null
+     },
+     {
+      "text": "Personality contains [Faithful]",
+      "itemId": null
+     },
+     {
+      "text": "Sprout Stone",
+      "itemId": "540010"
+     },
+     {
+      "text": "Stamen of Cubbo\u2019s Rose",
+      "itemId": "400020"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Bulbly",
+    "slug": "bulbly",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Veilfloat",
+    "slug": "veilfloat",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 42",
+      "itemId": null
+     }
+    ]
+   },
+   {
+    "name": "Luminelle",
+    "slug": "luminelle",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 52",
+      "itemId": null
+     },
+     {
+      "text": "Roar Stone",
+      "itemId": "540007"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Celestis",
+    "slug": "celestis",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Stellarys",
+    "slug": "stellarys",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 18",
+      "itemId": null
+     },
+     {
+      "text": "Night Stone",
+      "itemId": "540011"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Chirpi",
+    "slug": "chirpi",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Cornet",
+    "slug": "cornet",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 18",
+      "itemId": null
+     },
+     {
+      "text": "Gust Stone",
+      "itemId": "540003"
+     }
+    ]
+   },
+   {
+    "name": "Tromber",
+    "slug": "tromber",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 18",
+      "itemId": null
+     },
+     {
+      "text": "Acquired HP Potential is 6 or higher",
+      "itemId": null
+     },
+     {
+      "text": "Learn passive talent [Magic Horn].",
+      "itemId": null
+     },
+     {
+      "text": "Gust Stone",
+      "itemId": "540003"
+     }
+    ]
+   },
+   {
+    "name": "Tubster",
+    "slug": "tubster",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 18",
+      "itemId": null
+     },
+     {
+      "text": "Acquired BREAK Potential is 6 or higher",
+      "itemId": null
+     },
+     {
+      "text": "Gust Stone",
+      "itemId": "540003"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Cozite",
+    "slug": "cozite",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Bailite",
+    "slug": "bailite",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 51",
+      "itemId": null
+     },
+     {
+      "text": "Loam Stone",
+      "itemId": "540008"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Cubbo",
+    "slug": "cubbo",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Grizbo",
+    "slug": "grizbo",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 47.",
+      "itemId": null
+     },
+     {
+      "text": "Loam Stone",
+      "itemId": "540008"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Dewy",
+    "slug": "dewy",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Fragrancier",
+    "slug": "fragrancier",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 27",
+      "itemId": null
+     },
+     {
+      "text": "Night Stone",
+      "itemId": "540011"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Eko",
+    "slug": "eko",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Eklue",
+    "slug": "eklue",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 25",
+      "itemId": null
+     },
+     {
+      "text": "Acquired ATK Potential is 6 or higher",
+      "itemId": null
+     },
+     {
+      "text": "Gust Stone",
+      "itemId": "540003"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Emberpup",
+    "slug": "emberpup",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Flameruff",
+    "slug": "flameruff",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 12",
+      "itemId": null
+     }
+    ]
+   },
+   {
+    "name": "Inferlupa",
+    "slug": "inferlupa",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 20",
+      "itemId": null
+     },
+     {
+      "text": "Night Stone",
+      "itemId": "540011"
+     },
+     {
+      "text": "Unbroken Flameruff Spirit \u00d76",
+      "itemId": "540213"
+     }
+    ]
+   },
+   {
+    "name": "Scorchhowl",
+    "slug": "scorchhowl",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 20",
+      "itemId": null
+     },
+     {
+      "text": "Blaze Stone",
+      "itemId": "540001"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Fahloo",
+    "slug": "fahloo",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Erlath",
+    "slug": "erlath",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 49",
+      "itemId": null
+     },
+     {
+      "text": "Wave Stone",
+      "itemId": "540002"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Fentuft",
+    "slug": "fentuft",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Fenmane",
+    "slug": "fenmane",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 42",
+      "itemId": null
+     },
+     {
+      "text": "Roar Stone",
+      "itemId": "540007"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Flutternym",
+    "slug": "flutternym",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Gracewing",
+    "slug": "gracewing",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 21",
+      "itemId": null
+     },
+     {
+      "text": "Gust Stone",
+      "itemId": "540003"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Helmut",
+    "slug": "helmut",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Rookey",
+    "slug": "rookey",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 45",
+      "itemId": null
+     },
+     {
+      "text": "Defeat the Opponent by dealing damage with Counter in Ballistic Guard",
+      "itemId": null
+     },
+     {
+      "text": "Learn passive talent [Unwavering Rampart].",
+      "itemId": null
+     },
+     {
+      "text": "Night Stone",
+      "itemId": "540011"
+     }
+    ]
+   },
+   {
+    "name": "Pawney",
+    "slug": "pawney",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 45",
+      "itemId": null
+     },
+     {
+      "text": "Night Stone",
+      "itemId": "540011"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Hummin",
+    "slug": "hummin",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Hexxin",
+    "slug": "witchin",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 18",
+      "itemId": null
+     },
+     {
+      "text": "Night Stone",
+      "itemId": "540011"
+     }
+    ]
+   },
+   {
+    "name": "Tuckin",
+    "slug": "tuckin",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 18",
+      "itemId": null
+     },
+     {
+      "text": "Dig in for 20s at the entrance of Sanctum: Twisted Roots",
+      "itemId": null
+     },
+     {
+      "text": "Sprout Stone",
+      "itemId": "540010"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Iris",
+    "slug": "iris",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Irisal",
+    "slug": "irisal",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 18",
+      "itemId": null
+     },
+     {
+      "text": "Sprout Stone",
+      "itemId": "540010"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Jawling",
+    "slug": "jawling",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Helmwhelp",
+    "slug": "helmwhelp",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 38",
+      "itemId": null
+     }
+    ]
+   },
+   {
+    "name": "Helgon",
+    "slug": "helgon",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 48",
+      "itemId": null
+     },
+     {
+      "text": "Gust Stone",
+      "itemId": "540003"
+     }
+    ]
+   },
+   {
+    "name": "Infergon",
+    "slug": "infergon",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 48",
+      "itemId": null
+     },
+     {
+      "text": "Potential reaches the Perfect rating",
+      "itemId": null
+     },
+     {
+      "text": "Blaze Stone",
+      "itemId": "540001"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Nimbi",
+    "slug": "nimbi",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Dreaple",
+    "slug": "dreaple",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 21",
+      "itemId": null
+     },
+     {
+      "text": "Rest with the Pathfinder from night to day.",
+      "itemId": null
+     },
+     {
+      "text": "Learn passive talent [Dreamsong].",
+      "itemId": null
+     },
+     {
+      "text": "Night Stone",
+      "itemId": "540011"
+     }
+    ]
+   },
+   {
+    "name": "Turbo",
+    "slug": "turbo",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 21",
+      "itemId": null
+     },
+     {
+      "text": "Gust Stone",
+      "itemId": "540003"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Pebbling",
+    "slug": "pebbling",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Geodeback",
+    "slug": "geodeback",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 38",
+      "itemId": null
+     }
+    ]
+   },
+   {
+    "name": "Lavazar",
+    "slug": "lavazar",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 38",
+      "itemId": null
+     }
+    ]
+   },
+   {
+    "name": "Minespine",
+    "slug": "minespine",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 48",
+      "itemId": null
+     },
+     {
+      "text": "Loam Stone",
+      "itemId": "540008"
+     }
+    ]
+   },
+   {
+    "name": "Magmarex",
+    "slug": "magmarex",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 48",
+      "itemId": null
+     },
+     {
+      "text": "Soak in the hot spring pool",
+      "itemId": null
+     },
+     {
+      "text": "Blaze Stone",
+      "itemId": "540001"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Pomegg",
+    "slug": "pomegg",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Pomawk",
+    "slug": "pomawk",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 25",
+      "itemId": null
+     },
+     {
+      "text": "Sprout Stone",
+      "itemId": "540010"
+     }
+    ]
+   },
+   {
+    "name": "Dazmand",
+    "slug": "dazmand",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 25",
+      "itemId": null
+     },
+     {
+      "text": "Roar Stone",
+      "itemId": "540007"
+     },
+     {
+      "text": "Thunder Soul",
+      "itemId": "540215"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Shelly",
+    "slug": "shelly",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Sheldon",
+    "slug": "sheldon",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 29.",
+      "itemId": null
+     }
+    ]
+   },
+   {
+    "name": "Sherro",
+    "slug": "sherro",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 39",
+      "itemId": null
+     },
+     {
+      "text": "Wave Stone",
+      "itemId": "540002"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Skippy",
+    "slug": "skippy",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Pranky",
+    "slug": "pranky",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 12",
+      "itemId": null
+     }
+    ]
+   },
+   {
+    "name": "Glacy",
+    "slug": "glacy",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 20",
+      "itemId": null
+     },
+     {
+      "text": "Wave Stone",
+      "itemId": "540002"
+     }
+    ]
+   },
+   {
+    "name": "Leafy",
+    "slug": "leafy",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 20",
+      "itemId": null
+     },
+     {
+      "text": "Located on the giant lotus leaf where the Alpha Leafy resides",
+      "itemId": null
+     },
+     {
+      "text": "Sprout Stone",
+      "itemId": "540010"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Sparki",
+    "slug": "sparki",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Flamerion",
+    "slug": "flamerion",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 21",
+      "itemId": null
+     },
+     {
+      "text": "Blaze Stone",
+      "itemId": "540001"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Squarrel",
+    "slug": "squarrel",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Squashel",
+    "slug": "squashel",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo reaches Lv. 47.",
+      "itemId": null
+     },
+     {
+      "text": "Blaze Stone",
+      "itemId": "540001"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Susuta",
+    "slug": "susuta",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Popota",
+    "slug": "popota",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 29.",
+      "itemId": null
+     }
+    ]
+   },
+   {
+    "name": "Piopiota",
+    "slug": "piopiota",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 39",
+      "itemId": null
+     },
+     {
+      "text": "Approach and attract a Susuta of the opposite gender to follow",
+      "itemId": null
+     },
+     {
+      "text": "Wave Stone",
+      "itemId": "540002"
+     }
+    ]
+   },
+   {
+    "name": "Panpanta",
+    "slug": "panpanta",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 39",
+      "itemId": null
+     },
+     {
+      "text": "Wave Stone",
+      "itemId": "540002"
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "name": "Wisptis",
+    "slug": "wisptis",
+    "requirementsToReach": []
+   },
+   {
+    "name": "Fulmintis",
+    "slug": "fulmintis",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 29.",
+      "itemId": null
+     },
+     {
+      "text": "Obtain item: Fulminous Soul",
+      "itemId": null
+     },
+     {
+      "text": "Roar Stone",
+      "itemId": "540007"
+     },
+     {
+      "text": "Soul of Electric Shock",
+      "itemId": "540214"
+     }
+    ]
+   },
+   {
+    "name": "Ignitis",
+    "slug": "ignitis",
+    "requirementsToReach": [
+     {
+      "text": "Aniimo level 29.",
+      "itemId": null
+     },
+     {
+      "text": "Defeat 3 Wisptis of the same Form as yourself in succession",
+      "itemId": null
+     },
+     {
+      "text": "Night Stone",
+      "itemId": "540011"
+     }
+    ]
+   }
+  ]
+ ]
+}

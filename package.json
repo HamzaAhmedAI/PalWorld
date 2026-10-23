@@ -12,7 +12,8 @@
     "test:watch": "vitest",
     "verify-breeding": "node scripts/verify-breeding.mjs",
     "fetch-pals": "node scripts/fetch-1-0-data.mjs",
-    "build-pals": "node scripts/build-pals.mjs"
+    "build-pals": "node scripts/build-pals.mjs",
+    "build-aniimo": "node scripts/build-aniimo.mjs"
   },
   "dependencies": {
     "@google/genai": "^1.17.0",
