@@ -4,6 +4,8 @@ import { slugify } from "@/lib/palSlug";
 import { ANIIMO_CREATURES } from "@/data/aniimo";
 import { getAniimoSlug } from "@/lib/aniimoSlug";
 import { pairPageManifest } from "@/lib/pairPages";
+import { DIGIMON_CREATURES } from "@/data/digimon";
+import { getDigimonSlug } from "@/lib/digimonSlug";
 
 const BASE = "https://palbreedai.com";
 
@@ -16,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/aniimo`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/tools`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/tools/god-roll`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE}/digimon`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/map`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/breeding/routes`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/tier-lists`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
@@ -72,5 +75,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...palRoutes, ...aniimoRoutes, ...pairRoutes];
+  const digimonRoutes: MetadataRoute.Sitemap = DIGIMON_CREATURES.map((c) => ({
+    url: `${BASE}/digimon/${getDigimonSlug(c)}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...palRoutes,
+    ...aniimoRoutes,
+    ...pairRoutes,
+    ...digimonRoutes,
+  ];
 }

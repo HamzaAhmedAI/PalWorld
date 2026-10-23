@@ -33,6 +33,12 @@ const TOOLS = [
     title: "Aniimo Evolution Planner",
     blurb: "New: every Aniimo evolution path with its level gate, stone, deed or talent.",
   },
+  {
+    href: "/digimon",
+    title: "Time Stranger Digivolution Planner",
+    blurb:
+      "New: all 476 Digimon — shortest digivolution paths with Agent Rank, stat, item and DNA requirements.",
+  },
 ];
 
 export default function ToolsHub() {

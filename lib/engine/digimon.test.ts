@@ -45,7 +45,7 @@ describe("digimon pack — planner behaviour", () => {
   });
 
   it("plans a full path to Omnimon ending in the two-input DNA step", () => {
-    const plans = findPlans(digimonPack, "Omnimon", { maxDepth: 8 });
+    const plans = findPlans(digimonPack, "Omnimon", { maxSteps: 8 });
     expect(plans.length).toBeGreaterThan(0);
     const last = plans[0].steps[plans[0].steps.length - 1];
     expect(last.output.id).toBe("Omnimon");
