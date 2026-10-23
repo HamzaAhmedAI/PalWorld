@@ -3,6 +3,7 @@ import { PALS } from "@/data/pals";
 import { slugify } from "@/lib/palSlug";
 import { ANIIMO_CREATURES } from "@/data/aniimo";
 import { getAniimoSlug } from "@/lib/aniimoSlug";
+import { pairPageManifest } from "@/lib/pairPages";
 
 const BASE = "https://palbreedai.com";
 
@@ -62,5 +63,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...palRoutes, ...aniimoRoutes];
+  const pairRoutes: MetadataRoute.Sitemap = pairPageManifest().map((e) => ({
+    url: `${BASE}/breed/${e.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...palRoutes, ...aniimoRoutes, ...pairRoutes];
 }
