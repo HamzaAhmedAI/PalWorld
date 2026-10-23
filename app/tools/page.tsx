@@ -12,6 +12,12 @@ export const metadata: Metadata = {
 
 const TOOLS = [
   {
+    href: "/breed-my-pal",
+    title: "Breed My Pal — Fusion Generator",
+    blurb:
+      "Just for fun: pick any two Pals and meet their deterministic fan fusion. The link is the share card.",
+  },
+  {
     href: "/tools/god-roll",
     title: "God-Roll & Mutation Odds",
     blurb:

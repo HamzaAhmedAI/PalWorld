@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/tools`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/tools/god-roll`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/digimon`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE}/breed-my-pal`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/map`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/breeding/routes`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/tier-lists`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
