@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: BASE, lastModified: now, changeFrequency: "daily", priority: 1.0 },
     { url: `${BASE}/pals`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/aniimo`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE}/tools`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE}/tools/god-roll`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/map`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/breeding/routes`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/tier-lists`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
