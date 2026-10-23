@@ -18,6 +18,11 @@ export const metadata: Metadata = {
 
 const GUIDES = [
   {
+    href: "/guides/whats-changed-1-0",
+    title: "What's Changed in 1.0 Breeding",
+    blurb: "The table was rewritten — old recipes, new ranks, mutation, and the pairs that broke.",
+  },
+  {
     href: "/guides/mutation",
     title: "Mutation Breeding",
     blurb: "Cakes, recipes, and the rainbow-passive reference table.",

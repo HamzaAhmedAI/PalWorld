@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/tier-lists/mounts`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/tier-lists/work`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/guides`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE}/guides/whats-changed-1-0`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/guides/mutation`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/guides/work-suitability`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/guides/awakening`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
