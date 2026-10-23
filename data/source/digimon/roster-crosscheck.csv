@@ -1,0 +1,460 @@
+ID,Name,Stage,Attribute,Type,Personality
+1,Kuramon,In-Training I,No Data,Unidentified,Sly
+2,Choromon,In-Training I,No Data,Machine,Friendly
+3,Dodomon,In-Training I,No Data,Slime,Reckless
+4,Pabumon,In-Training I,No Data,Slime,Tolerant
+5,Punimon,In-Training I,No Data,Slime,Friendly
+6,Botamon,In-Training I,No Data,Slime,Daring
+7,Poyomon,In-Training I,No Data,Slime,Enlightened
+8,Kapurimon,In-Training II,No Data,Lesser,Friendly
+9,Koromon,In-Training II,No Data,Lesser,Daring
+10,Tanemon,In-Training II,No Data,Bulb,Sociable
+11,Tsunomon,In-Training II,No Data,Lesser,Friendly
+12,Tsumemon,In-Training II,No Data,Unidentified,Sly
+13,Tokomon,In-Training II,No Data,Lesser,Enlightened
+14,Dorimon,In-Training II,No Data,Lesser,Reckless
+15,Nyaromon,In-Training II,No Data,Lesser,Devoted
+16,Pagumon,In-Training II,No Data,Lesser,Strategic
+17,Yokomon,In-Training II,No Data,Bulb,Sly
+18,Bukamon,In-Training II,No Data,Lesser,Reckless
+19,Motimon,In-Training II,No Data,Lesser,Tolerant
+20,Wanyamon,In-Training II,No Data,Lesser,Zealous
+21,Agumon,Rookie,Vaccine,Reptile,Daring
+22,Kudamon,Rookie,Vaccine,Holy Beast,Strategic
+23,Gomamon,Rookie,Vaccine,Sea Beast,Reckless
+24,Coronamon,Rookie,Vaccine,Beast,Daring
+25,Zubamon,Rookie,Vaccine,Weapon,Zealous
+26,Solarmon,Rookie,Vaccine,Machine,Sociable
+27,Terriermon,Rookie,Vaccine,Beast,Tolerant
+28,Tentomon,Rookie,Vaccine,Insectoid,Sly
+29,ToyAgumon,Rookie,Vaccine,Puppet,Friendly
+30,Tapirmon,Rookie,Vaccine,Holy Beast,Tolerant
+31,Hyokomon,Rookie,Vaccine,Baby Bird,Reckless
+32,Biyomon,Rookie,Vaccine,Baby Bird,Tolerant
+33,Falcomon,Rookie,Vaccine,Bird,Friendly
+34,Salamon,Rookie,Vaccine,Mammal,Tolerant
+35,Bearmon,Rookie,Vaccine,Beast,Reckless
+36,Penmon,Rookie,Vaccine,Bird,Daring
+37,Monodramon,Rookie,Vaccine,Mini Dragon,Reckless
+38,Ryudamon,Rookie,Vaccine,Beast,Zealous
+39,Lucemon,Rookie,Vaccine,Angel,Enlightened
+40,Elecmon,Rookie,Data,Mammal,Friendly
+41,Gaomon,Rookie,Data,Beast,Zealous
+42,Crabmon,Rookie,Data,Crustacean,Opportunistic
+43,Gabumon,Rookie,Data,Reptile,Sociable
+44,Kamemon,Rookie,Data,Android,Friendly
+45,Kokuwamon,Rookie,Data,Machine,Zealous
+46,Gotsumon,Rookie,Data,Ore,Friendly
+47,Kotemon,Rookie,Data,Reptile,Opportunistic
+48,Shoutmon,Rookie,Data,Mini Dragon,Daring
+49,Dracomon,Rookie,Data,Dragon,Reckless
+50,Dorumon,Rookie,Data,Beast,Reckless
+51,Patamon,Rookie,Data,Mammal,Enlightened
+52,Huckmon,Rookie,Data,Mini Dragon,Friendly
+53,Palmon,Rookie,Data,Vegetation,Sociable
+54,Floramon,Rookie,Data,Vegetation,Strategic
+55,Muchomon,Rookie,Data,Bird,Devoted
+56,Lalamon,Rookie,Data,Vegetation,Sociable
+57,Lunamon,Rookie,Data,Mammal,Enlightened
+58,Renamon,Rookie,Data,Beast Man,Enlightened
+59,Lopmon,Rookie,Data,Beast,Strategic
+60,Impmon,Rookie,Virus,Little Devil,Sly
+61,Otamamon,Rookie,Virus,Amphibian,Sly
+62,Gazimon,Rookie,Virus,Mammal,Daring
+63,Gizamon,Rookie,Virus,Sea Animal,Daring
+64,Guilmon,Rookie,Virus,Reptile,Daring
+65,Goblimon,Rookie,Virus,Demon,Daring
+66,Shamamon,Rookie,Virus,Demon,Sociable
+67,Syakomon,Rookie,Virus,Crustacean,Daring
+68,SnowGoblimon,Rookie,Virus,Demon,Friendly
+69,Chuumon,Rookie,Virus,Beast,Sociable
+70,Dracmon,Rookie,Virus,Undead,Reckless
+71,Hagurumon,Rookie,Virus,Machine,Sociable
+72,DemiDevimon,Rookie,Virus,Little Devil,Enlightened
+73,FunBeemon,Rookie,Virus,Insectoid,Opportunistic
+74,Betamon,Rookie,Virus,Amphibian,Strategic
+75,Mushroomon,Rookie,Virus,Vegetation,Friendly
+76,Armadillomon,Rookie,Free,Mammal,Overprotective
+77,Veemon,Rookie,Free,Mini Dragon,Zealous
+78,Hawkmon,Rookie,Free,Bird,Sociable
+79,Wormmon,Rookie,Free,Larva,Tolerant
+80,Keramon,Rookie,Unknown,Unidentified,Sly
+81,Aegiomon,Champion,Vaccine,Deity,Friendly
+82,Ikkakumon,Champion,Vaccine,Sea Beast,Reckless
+83,Airdramon,Champion,Vaccine,Mythical Beast,Reckless
+84,Angemon,Champion,Vaccine,Angel,Enlightened
+85,Kabuterimon,Champion,Vaccine,Insectoid,Sly
+86,Gargomon,Champion,Vaccine,Beast Man,Tolerant
+87,Garurumon,Champion,Vaccine,Beast,Friendly
+88,Ginryumon,Champion,Vaccine,Beast Dragon,Zealous
+89,Grizzlymon,Champion,Vaccine,Beast,Reckless
+90,Greymon,Champion,Vaccine,Dinosaur,Daring
+91,Coredramon (Blue),Champion,Vaccine,Dragon,Daring
+92,GeoGreymon,Champion,Vaccine,Dinosaur,Friendly
+93,Strikedramon,Champion,Vaccine,Dragon Man,Reckless
+94,Snimon,Champion,Vaccine,Insectoid,Sociable
+95,ZubaEagermon,Champion,Vaccine,Weapon,Zealous
+96,Sorcermon,Champion,Vaccine,Wizard,Strategic
+97,Gatomon,Champion,Vaccine,Holy Beast,Tolerant
+98,Dobermon,Champion,Vaccine,Dark Beast,Sociable
+99,Birdramon,Champion,Vaccine,Giant Bird,Tolerant
+100,Firamon,Champion,Vaccine,Beast,Daring
+101,Veedramon,Champion,Vaccine,Mythical Dragon,Zealous
+102,Buraimon,Champion,Vaccine,Bird Man,Reckless
+103,Peckmon,Champion,Vaccine,Bird,Friendly
+104,Mojyamon,Champion,Vaccine,Rare Animal,Tolerant
+105,Frigimon,Champion,Vaccine,Ice-Snow,Friendly
+106,Unimon,Champion,Vaccine,Mythical Beast,Strategic
+107,Raptordramon,Champion,Vaccine,Android,Friendly
+108,Deputymon,Champion,Vaccine,Mutant,Friendly
+109,Leomon,Champion,Vaccine,Beast Man,Zealous
+110,Reppamon,Champion,Vaccine,Holy Beast,Strategic
+111,Icemon,Champion,Data,Ice-Snow,Sociable
+112,Wizardmon,Champion,Data,Wizard,Enlightened
+113,Witchmon,Champion,Data,Wizard,Sly
+114,Gaogamon,Champion,Data,Beast,Zealous
+115,Gawappamon,Champion,Data,Android,Friendly
+116,Kiwimon,Champion,Data,Ancient Bird,Strategic
+117,Kyubimon,Champion,Data,Mysterious Beast,Enlightened
+118,Clockmon,Champion,Data,Machine,Sociable
+119,Centarumon,Champion,Data,Beast Man,Friendly
+120,Sunflowmon,Champion,Data,Vegetation,Sociable
+121,Seadramon,Champion,Data,Aquatic,Strategic
+122,Coelamon,Champion,Data,Ancient Fish,Opportunistic
+123,Shellmon,Champion,Data,Mollusk,Daring
+124,Starmon,Champion,Data,Mutant,Sociable
+125,Tankmon,Champion,Data,Android,Friendly
+126,MudFrigimon,Champion,Data,Mutant,Friendly
+127,Dinohyumon,Champion,Data,Dragon Man,Reckless
+128,Tyrannomon,Champion,Data,Dinosaur,Zealous
+129,Turuiemon,Champion,Data,Beast Man,Strategic
+130,Togemon,Champion,Data,Vegetation,Sociable
+131,Drimogemon,Champion,Data,Beast,Zealous
+132,Dorugamon,Champion,Data,Beast Dragon,Reckless
+133,BaoHuckmon,Champion,Data,Dinosaur,Friendly
+134,Blimpmon,Champion,Data,Machine,Sociable
+135,Meramon,Champion,Data,Fire,Zealous
+136,Monochromon,Champion,Data,Armored Dragon,Zealous
+137,Lekismon,Champion,Data,Beast Man,Enlightened
+138,IceDevimon,Champion,Virus,Dark Angel,Enlightened
+139,Wendigomon,Champion,Virus,Beast Man,Strategic
+140,Woodmon,Champion,Virus,Vegetation,Friendly
+141,Ogremon,Champion,Virus,Demon,Daring
+142,Octomon,Champion,Virus,Mollusk,Daring
+143,Guardromon,Champion,Virus,Machine,Devoted
+144,ShellNumemon,Champion,Virus,Crustacean,Sociable
+145,Growlmon,Champion,Virus,Dark Dragon,Daring
+146,Kuwagamon,Champion,Virus,Insectoid,Zealous
+147,Gekomon,Champion,Virus,Amphibian,Sly
+148,Geremon,Champion,Virus,Mollusk,Reckless
+149,Coredramon (Green),Champion,Virus,Dragon,Reckless
+150,GoldNumemon,Champion,Virus,Mutant,Sociable
+151,Golemon,Champion,Virus,Mineral,Friendly
+152,Cyclonemon,Champion,Virus,Dragon Man,Daring
+153,Sangloupmon,Champion,Virus,Dark Beast,Zealous
+154,Sukamon,Champion,Virus,Abnormal,Sociable
+155,Tuskmon,Champion,Virus,Dinosaur,Zealous
+156,Devimon,Champion,Virus,Dark Angel,Enlightened
+157,Deltamon,Champion,Virus,Composite,Friendly
+158,Dokugumon,Champion,Virus,Insectoid,Friendly
+159,Nanimon,Champion,Virus,Invader,Reckless
+160,Numemon,Champion,Virus,Mollusk,Reckless
+161,Bakemon,Champion,Virus,Ghost,Strategic
+162,Hyogamon,Champion,Virus,Ice-Snow,Friendly
+163,Fugamon,Champion,Virus,Demon,Sociable
+164,Flymon,Champion,Virus,Insectoid,Opportunistic
+165,PlatinumSukamon,Champion,Virus,Mutant,Sociable
+166,BlackGatomon,Champion,Virus,Dark Beast,Enlightened
+167,Vegiemon,Champion,Virus,Carnivorous Vegetation,Overprotective
+168,Minotarumon,Champion,Virus,Beast Man,Opportunistic
+169,Musyamon,Champion,Virus,Wizard,Reckless
+170,Mekanorimon,Champion,Virus,Machine,Tolerant
+171,Raremon,Champion,Virus,Undead,Reckless
+172,Waspmon,Champion,Virus,Android,Opportunistic
+173,Aquilamon,Champion,Free,Giant Bird,Sociable
+174,Ankylomon,Champion,Free,Armored Dragon,Overprotective
+175,ExVeemon,Champion,Free,Mythical Dragon,Zealous
+176,Guardromon (Gold),Champion,Free,Machine,Sociable
+177,Stingmon,Champion,Free,Insectoid,Tolerant
+178,Kurisarimon,Champion,Unknown,Unidentified,Sly
+179,Submarimon,Armor,Free,Aquatic,Overprotective
+180,Shurimon,Armor,Free,Mutant,Sociable
+181,Digmon,Armor,Free,Insectoid,Opportunistic
+182,Nefertimon,Armor,Free,Holy Beast,Enlightened
+183,Flamedramon,Armor,Free,Dragon Man,Zealous
+184,Pegasusmon,Armor,Free,Holy Beast,Enlightened
+185,Halsemon,Armor,Free,Beast,Strategic
+186,Lighdramon,Armor,Free,Beast,Sociable
+187,Agunimon,Hybrid,Variable,Wizard,Zealous
+188,Lobomon,Hybrid,Variable,Warrior,Friendly
+189,Lanamon,Hybrid,Variable,Pixie,Enlightened
+190,BurningGreymon,Hybrid,Variable,Dark Dragon,Zealous
+191,Calmaramon,Hybrid,Variable,Aquatic,Enlightened
+192,KendoGarurumon,Hybrid,Variable,Android,Friendly
+193,Aegiochusmon,Ultimate,Vaccine,Deity,Friendly
+194,Aegiochusmon: Green,Ultimate,Vaccine,Deity,Friendly
+195,Aegiochusmon: Dark,Ultimate,Vaccine,Deity,Reckless
+196,Aegiochusmon: Blue,Ultimate,Vaccine,Deity,Sociable
+197,Aegiochusmon: Holy,Ultimate,Vaccine,Deity,Friendly
+198,MegaKabuterimon,Ultimate,Vaccine,Insectoid,Sly
+199,Andromon,Ultimate,Vaccine,Android,Devoted
+200,Wingdramon,Ultimate,Vaccine,Sky Dragon,Daring
+201,AeroVeedramon,Ultimate,Vaccine,Holy Dragon,Zealous
+202,ExTyrannomon,Ultimate,Vaccine,Puppet,Daring
+203,Angewomon,Ultimate,Vaccine,High Angel,Tolerant
+204,Garudamon,Ultimate,Vaccine,Bird Man,Tolerant
+205,GrapLeomon,Ultimate,Vaccine,Beast Man,Zealous
+206,Grademon,Ultimate,Vaccine,Warrior,Friendly
+207,GreatGrizzlymon,Ultimate,Vaccine,Beast Man,Reckless
+208,Cerberusmon,Ultimate,Vaccine,Dark Beast,Sociable
+209,Cerberusmon WM,Ultimate,Vaccine,Wizard,Sociable
+210,Cyberdramon,Ultimate,Vaccine,Android,Reckless
+211,JewelBeemon,Ultimate,Vaccine,Insectoid,Zealous
+212,Zudomon,Ultimate,Vaccine,Sea Beast,Reckless
+213,Chirinmon,Ultimate,Vaccine,Holy Beast,Strategic
+214,Duramon,Ultimate,Vaccine,Weapon,Zealous
+215,Parrotmon,Ultimate,Vaccine,Giant Bird,Reckless
+216,IceLeomon,Ultimate,Vaccine,Beast Man,Devoted
+217,Hisyaryumon,Ultimate,Vaccine,Beast Dragon,Zealous
+218,Butenmon,Ultimate,Vaccine,Deity,Reckless
+219,Flaremon,Ultimate,Vaccine,Beast Man,Daring
+220,Whamon,Ultimate,Vaccine,Sea Animal,Strategic
+221,MagnaAngemon,Ultimate,Vaccine,High Angel,Enlightened
+222,Mammothmon,Ultimate,Vaccine,Ancient Beast,Zealous
+223,MetalGreymon,Ultimate,Vaccine,Android,Daring
+224,Monzaemon,Ultimate,Vaccine,Puppet,Daring
+225,Crowmon,Ultimate,Vaccine,Mysterious Bird,Sociable
+226,RizeGreymon,Ultimate,Vaccine,Android,Friendly
+227,Rapidmon,Ultimate,Vaccine,Android,Tolerant
+228,LoaderLeomon,Ultimate,Vaccine,Machine,Daring
+229,WereGarurumon,Ultimate,Vaccine,Beast Man,Friendly
+230,Scorpiomon,Ultimate,Data,Ancient Crustacean,Opportunistic
+231,Enbarrmon,Ultimate,Data,Undead,Sly
+232,Antylamon,Ultimate,Data,Holy Beast,Strategic
+233,Meteormon,Ultimate,Data,Ore,Sociable
+234,OmniShoutmon,Ultimate,Data,Dragon Man,Daring
+235,Kimeramon,Ultimate,Data,Composite,Friendly
+236,CatchMamemon,Ultimate,Data,Mutant,Opportunistic
+237,Crescemon,Ultimate,Data,Wizard,Enlightened
+238,SuperStarmon,Ultimate,Data,Mutant,Sociable
+239,SkullBaluchimon,Ultimate,Data,Undead,Sociable
+240,SaviorHuckmon,Ultimate,Data,Dragon Man,Friendly
+241,Sirenmon,Ultimate,Data,Deity,Strategic
+242,Taomon,Ultimate,Data,Wizard,Enlightened
+243,Digitamamon,Ultimate,Data,Perfect,Reckless
+244,SkullMeramon,Ultimate,Data,Fire,Zealous
+245,Deramon,Ultimate,Data,Bird,Strategic
+246,Triceramon,Ultimate,Data,Ceratopsian,Zealous
+247,DoruGreymon,Ultimate,Data,Beast Dragon,Reckless
+248,Knightmon,Ultimate,Data,Warrior,Zealous
+249,Divermon,Ultimate,Data,Aquatic Beast Man,Daring
+250,Pandamon,Ultimate,Data,Puppet,Sociable
+251,Pumpkinmon,Ultimate,Data,Puppet,Sly
+252,BigMamemon,Ultimate,Data,Mutant,Sly
+253,Piximon,Ultimate,Data,Pixie,Tolerant
+254,HippoGryphonmon,Ultimate,Data,Mythical Beast,Strategic
+255,Brachiomon,Ultimate,Data,Plesiosaur,Devoted
+256,Volcanomon,Ultimate,Data,Android,Friendly
+257,MasterBlimpmon,Ultimate,Data,Machine,Sociable
+258,MachGaogamon,Ultimate,Data,Android,Zealous
+259,Mamemon,Ultimate,Data,Mutant,Daring
+260,MegaSeadramon,Ultimate,Data,Aquatic,Strategic
+261,MetalMamemon,Ultimate,Data,Android,Daring
+262,Lilamon,Ultimate,Data,Pixie,Sociable
+263,Lillymon,Ultimate,Data,Pixie,Sociable
+264,Locomon,Ultimate,Data,Machine,Sociable
+265,Astamon,Ultimate,Virus,Wizard,Zealous
+266,Arukenimon,Ultimate,Virus,Dark Beast,Friendly
+267,Myotismon,Ultimate,Virus,Undead,Enlightened
+268,Etemon,Ultimate,Virus,Puppet,Opportunistic
+269,Okuwamon,Ultimate,Virus,Insectoid,Zealous
+270,Orochimon,Ultimate,Virus,Dark Dragon,Daring
+271,Garbagemon,Ultimate,Virus,Mutant,Sociable
+272,Gigadramon,Ultimate,Virus,Android,Reckless
+273,CannonBeemon,Ultimate,Virus,Android,Opportunistic
+274,Groundramon,Ultimate,Virus,Earth Dragon,Reckless
+275,Sharkmon,Ultimate,Virus,Android,Reckless
+276,Shaujinmon,Ultimate,Virus,Wizard,Friendly
+277,Cherrymon,Ultimate,Virus,Vegetation,Friendly
+278,SkullGreymon,Ultimate,Virus,Undead,Reckless
+279,SkullSatamon,Ultimate,Virus,Undead,Enlightened
+280,SkullSeadramon,Ultimate,Virus,Undead,Strategic
+281,DarkSuperStarmon,Ultimate,Virus,Mutant,Friendly
+282,Dragomon,Ultimate,Virus,Aquatic Beast Man,Overprotective
+283,Tankdramon,Ultimate,Virus,Machine,Friendly
+284,ShogunGekomon,Ultimate,Virus,Amphibian,Sly
+285,Datamon,Ultimate,Virus,Machine,Strategic
+286,Phantomon,Ultimate,Virus,Ghost,Strategic
+287,BlackKingNumemon,Ultimate,Virus,Mollusk,Sociable
+288,BlueMeramon,Ultimate,Virus,Fire,Zealous
+289,Vademon,Ultimate,Virus,Alien,Overprotective
+290,Matadormon,Ultimate,Virus,Undead,Zealous
+291,Mummymon,Ultimate,Virus,Undead,Reckless
+292,Mistymon,Ultimate,Virus,Magic Warrior,Enlightened
+293,Megadramon,Ultimate,Virus,Android,Reckless
+294,WarGrowlmon,Ultimate,Virus,Android,Daring
+295,MetalTyrannomon,Ultimate,Virus,Android,Zealous
+296,Lucemon CM,Ultimate,Virus,Evil King,Enlightened
+297,LadyDevimon,Ultimate,Virus,Dark Angel,Enlightened
+298,Wisemon,Ultimate,Virus,Wizard,Enlightened
+299,WaruSeadramon,Ultimate,Virus,Aquatic,Sly
+300,Shakkoumon,Ultimate,Free,Mutant,Overprotective
+301,Silphymon,Ultimate,Free,Beast Man,Tolerant
+302,Dinobeemon,Ultimate,Free,Mutant,Tolerant
+303,Paildramon,Ultimate,Free,Dragon Man,Zealous
+304,Infermon,Ultimate,Unknown,Unidentified,Sly
+305,Aldamon,Hybrid,Variable,Wizard,Zealous
+306,Beowolfmon,Hybrid,Variable,Warrior,Friendly
+307,Apollomon,Mega,Vaccine,Deity,Daring
+308,Alphamon,Mega,Vaccine,Holy Knight,Friendly
+309,UlforceVeedramon,Mega,Vaccine,Holy Knight,Zealous
+310,Varodurumon,Mega,Vaccine,Holy Bird,Sociable
+311,Venusmon,Mega,Vaccine,Deity,Tolerant
+312,WarGreymon,Mega,Vaccine,Dragon Man,Daring
+313,Ouryumon,Mega,Vaccine,Beast Dragon,Zealous
+314,Ophanimon,Mega,Vaccine,Super Angel,Tolerant
+315,ClavisAngemon,Mega,Vaccine,Virtue,Devoted
+316,Craniamon,Mega,Vaccine,Holy Knight,Devoted
+317,Eaglemon,Mega,Vaccine,Giant Bird,Enlightened
+318,Chronomon HM,Mega,Vaccine,Bird Man,Tolerant
+319,Cherubimon (Black),Mega,Vaccine,Cherub,Strategic
+320,Cherubimon (Good),Mega,Vaccine,Cherub,Strategic
+321,Goldramon,Mega,Vaccine,Holy Dragon,Enlightened
+322,ShineGreymon,Mega,Vaccine,Shining Dragon,Friendly
+323,Justimon,Mega,Vaccine,Android,Reckless
+324,SkullMammothmon,Mega,Vaccine,Undead,Zealous
+325,SlashAngemon,Mega,Vaccine,Great Angel,Reckless
+326,Kentaurosmon,Mega,Vaccine,Holy Knight,Strategic
+327,Slayerdramon,Mega,Vaccine,Dragon Man,Daring
+328,Seraphimon,Mega,Vaccine,Seraph,Enlightened
+329,MegaGargomon,Mega,Vaccine,Machine,Tolerant
+330,Durandamon,Mega,Vaccine,Holy Sword,Zealous
+331,Neptunemon,Mega,Vaccine,Deity,Daring
+332,HiAndromon,Mega,Vaccine,Android,Devoted
+333,BanchoLeomon,Mega,Vaccine,Beast Man,Daring
+334,HerculesKabuterimon,Mega,Vaccine,Insectoid,Sly
+335,Phoenixmon,Mega,Vaccine,Holy Beast,Tolerant
+336,Magnadramon,Mega,Vaccine,Holy Dragon,Tolerant
+337,Mastemon,Mega,Vaccine,Angel,Tolerant
+338,MarineAngemon,Mega,Vaccine,Pixie,Tolerant
+339,Marsmon,Mega,Vaccine,Deity,Zealous
+340,Jupitermon,Mega,Vaccine,Deity,Friendly
+341,Ravemon,Mega,Vaccine,Android,Sociable
+342,UltimateBrachiomon,Mega,Data,Android,Devoted
+343,Vulcanusmon,Mega,Data,Deity,Tolerant
+344,Gankoomon,Mega,Data,Holy Knight,Zealous
+345,Kuzuhamon,Mega,Data,Deity,Enlightened
+346,GroundLocomon,Mega,Data,Machine,Sociable
+347,Gryphonmon,Mega,Data,Mythical Beast,Strategic
+348,Ceresmon,Mega,Data,Deity,Strategic
+349,Ceresmon Medium,Mega,Data,Deity,Strategic
+350,SaberLeomon,Mega,Data,Ancient Beast,Zealous
+351,Sakuyamon,Mega,Data,Deity,Enlightened
+352,Jesmon,Mega,Data,Holy Knight,Friendly
+353,JumboGamemon,Mega,Data,Android,Friendly
+354,Dianamon,Mega,Data,Deity,Enlightened
+355,Dynasmon,Mega,Data,Holy Knight,Enlightened
+356,Leopardmon,Mega,Data,Holy Knight,Zealous
+357,Leopardmon LM,Mega,Data,Holy Knight,Zealous
+358,Dorugoramon,Mega,Data,Beast Dragon,Reckless
+359,PileVolcanomon,Mega,Data,Android,Friendly
+360,PrinceMamemon,Mega,Data,Mutant,Sly
+361,Plesiomon,Mega,Data,Plesiosaur,Reckless
+362,Boltmon,Mega,Data,Android,Zealous
+363,MirageGaogamon,Mega,Data,Beast Knight,Zealous
+364,MetalGarurumon,Mega,Data,Android,Friendly
+365,MetalSeadramon,Mega,Data,Android,Strategic
+366,MedievalGallantmon,Mega,Data,Warrior,Enlightened
+367,Rosemon,Mega,Data,Pixie,Sociable
+368,Lotosmon,Mega,Data,Pixie,Enlightened
+369,AvengeKidmon,Mega,Virus,Dragon Man,Daring
+370,Ebemon,Mega,Virus,Android,Overprotective
+371,VenomMyotismon,Mega,Virus,Dark Beast,Enlightened
+372,AncientWisemon,Mega,Virus,Ancient Mutant,Enlightened
+373,Gaiomon,Mega,Virus,Dragon Man,Reckless
+374,ChaosGallantmon,Mega,Virus,Dark Knight,Reckless
+375,Chaosdramon,Mega,Virus,Machine,Zealous
+376,Callismon,Mega,Virus,Dark Beast,Reckless
+377,Gundramon,Mega,Virus,Machine,Reckless
+378,KingEtemon,Mega,Virus,Puppet,Daring
+379,GranDracmon,Mega,Virus,Dark Beast,Zealous
+380,Chronomon DM,Mega,Virus,Dragon Man,Reckless
+381,Zanbamon,Mega,Virus,Wizard,Reckless
+382,ZombiePlutomon,Mega,Virus,Undead,Daring
+383,Darkdramon,Mega,Virus,Android,Zealous
+384,TigerVespamon,Mega,Virus,Android,Opportunistic
+385,Titamon,Mega,Virus,Deity,Reckless
+386,TyrantKabuterimon,Mega,Virus,Insectoid,Reckless
+387,Creepymon,Mega,Virus,Evil King,Enlightened
+388,Gallantmon,Mega,Virus,Holy Knight,Daring
+389,Bacchusmon,Mega,Virus,Deity,Zealous
+390,Bacchusmon DM,Mega,Virus,Deity,Zealous
+391,Barbamon,Mega,Virus,Evil King,Enlightened
+392,Piedmon,Mega,Virus,Wizard,Strategic
+393,Puppetmon,Mega,Virus,Puppet,Friendly
+394,Pharaohmon,Mega,Virus,Wizard,Reckless
+395,Pukumon,Mega,Virus,Mutant,Opportunistic
+396,PlatinumNumemon,Mega,Virus,Mutant,Sociable
+397,Plutomon,Mega,Virus,Deity,Daring
+398,Breakdramon,Mega,Virus,Machine Dragon,Reckless
+399,MaloMyotismon,Mega,Virus,Evil King,Enlightened
+400,BeelStarmon,Mega,Virus,Wizard,Daring
+401,Beelzemon,Mega,Virus,Evil King,Zealous
+402,Belphemon SM,Mega,Virus,Evil King,Zealous
+403,MagnaKidmon,Mega,Virus,Dragon Man,Zealous
+404,Minervamon,Mega,Virus,Deity,Friendly
+405,Millenniummon,Mega,Virus,Composite,Friendly
+406,Machinedramon,Mega,Virus,Machine,Reckless
+407,Megidramon,Mega,Virus,Evil Dragon,Daring
+408,MetalEtemon,Mega,Virus,Android,Opportunistic
+409,Merukimon,Mega,Virus,Deity,Friendly
+410,Junomon,Mega,Virus,Deity,Strategic
+411,Junomon HM,Mega,Virus,Deity,Strategic
+412,RustTyrannomon,Mega,Virus,Android,Zealous
+413,Leviamon,Mega,Virus,Evil King,Strategic
+414,Lilithmon,Mega,Virus,Evil King,Enlightened
+415,LordKnightmon,Mega,Virus,Holy Knight,Daring
+416,Imperialdramon DM,Mega,Free,Ancient Dragon,Zealous
+417,Imperialdramon FM,Mega,Free,Ancient Dragon Man,Zealous
+418,Vikemon,Mega,Free,Beast Man,Reckless
+419,Valkyrimon,Mega,Free,Warrior,Tolerant
+420,GranKuwagamon,Mega,Free,Insectoid,Zealous
+421,Diaboromon,Mega,Unknown,Unidentified,Sly
+422,Rapidmon (Armor),Armor,Vaccine,Holy Knight,Sociable
+423,Magnamon,Armor,Free,Holy Knight,Zealous
+424,EmperorGreymon,Hybrid,Variable,Dragon Warrior,Zealous
+425,MagnaGarurumon,Hybrid,Variable,Android,Friendly
+426,MagnaGarurumon (Detached),Hybrid,Variable,Android,Friendly
+427,Alphamon: Ouryuken,Mega +,Vaccine,No Data,Friendly
+428,Craniamon + Enbarrmon,Mega +,Vaccine,Holy Knight,Devoted
+429,Imperialdramon PM,Mega +,Vaccine,Ancient Holy Knight,Zealous
+430,Omnimon,Mega +,Vaccine,Holy Knight,Daring
+431,Omnimon Zwart,Mega +,Vaccine,Holy Knight,Friendly
+432,Chaosmon,Mega +,Vaccine,Unique,Daring
+433,Chaosmon: Valdur Arm,Mega +,Vaccine,Unique,Daring
+434,GraceNovamon,Mega +,Vaccine,Galaxy,Enlightened
+435,ShineGreymon BM,Mega +,Vaccine,Shining Dragon,Friendly
+436,Susanomon,Mega +,Vaccine,Deity,Zealous
+437,Jupitermon WM,Mega +,Vaccine,Deity,Friendly
+438,Ravemon BM,Mega +,Vaccine,Android,Sociable
+439,Examon,Mega +,Data,Holy Knight,Reckless
+440,MirageGaogamon BM,Mega +,Data,Beast Knight,Zealous
+441,Rosemon BM,Mega +,Data,Pixie,Sociable
+442,Titamon + SkullBaluchimon,Mega +,Virus,Deity,Reckless
+443,Gallantmon CM,Mega +,Virus,Holy Knight,Daring
+444,Beelzemon BM,Mega +,Virus,Evil King,Zealous
+445,Belphemon RM,Mega +,Virus,Evil King,Zealous
+446,Mervamon,Mega +,Virus,Deity,Friendly
+447,Lucemon SM,Mega +,Virus,Demon God,Enlightened
+448,Armageddemon,Mega +,Unknown,Unidentified,Sly
+449,Agumon (Bond of Bravery),Mega +,Unknown,Unidentified,Brave
+450,Apocalymon,Mega +,Unknown,Unidentified,Strategic
+451,Gabumon (Bond of Friendship),Mega +,Unknown,Unidentified,Compassionate
+468,Agumon (Black),Rookie,Virus,Reptile,Reckless
+469,Gabumon (Black),Rookie,Virus,Reptile,Sly
+470,Garurumon (Black),Champion,Virus,Beast,Friendly
+471,Greymon (Blue),Champion,Virus,Dinosaur,Reckless
+472,MetalGreymon (Blue),Ultimate,Virus,Android,Reckless
+473,WereGarurumon (Black),Ultimate,Virus,Beast Man,Friendly
+474,BlackWarGreymon,Mega,Virus,Dragon Man,Reckless
+475,MetalGarurumon (Black),Mega,Virus,Android,Friendly

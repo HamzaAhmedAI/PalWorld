@@ -13,7 +13,8 @@
     "verify-breeding": "node scripts/verify-breeding.mjs",
     "fetch-pals": "node scripts/fetch-1-0-data.mjs",
     "build-pals": "node scripts/build-pals.mjs",
-    "build-aniimo": "node scripts/build-aniimo.mjs"
+    "build-aniimo": "node scripts/build-aniimo.mjs",
+    "build-digimon": "node scripts/build-digimon.mjs"
   },
   "dependencies": {
     "@google/genai": "^1.17.0",
