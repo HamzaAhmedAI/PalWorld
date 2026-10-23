@@ -5,14 +5,21 @@ import {
   getPairPage,
 } from "./pairPages";
 import { getResultingPal } from "./breeding";
-import { UNIQUE_COMBOS } from "../data/pals";
+import { PALS, UNIQUE_COMBOS } from "../data/pals";
 
 describe("pair page manifest (batch 1)", () => {
   const manifest = pairPageManifest();
 
   it("is a staged batch, not the whole table", () => {
     expect(manifest.length).toBeGreaterThanOrEqual(250);
-    expect(manifest.length).toBeLessThanOrEqual(700);
+    expect(manifest.length).toBeLessThanOrEqual(1200);
+  });
+
+  it("batch 2 covers rarity >= 7 children with at least one pair each", () => {
+    const covered = new Set(manifest.map((e) => e.child.name));
+    for (const pal of PALS) {
+      if (pal.rarity >= 7) expect(covered.has(pal.name)).toBe(true);
+    }
   });
 
   it("has unique slugs", () => {

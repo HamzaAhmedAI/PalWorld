@@ -9,6 +9,9 @@
 //   2. For every high-value child (unique-combo result or rarity >= 9),
 //      its 6 easiest producing pairs (lowest combined parent rarity,
 //      wild-caught parents first).
+//   Batch 2 (same rules, wider net): children at rarity >= 7 also get
+//   their 6 easiest pairs. Later batches lower the rarity floor further;
+//   indexation data from each batch decides the pace.
 //
 // Every pair page carries the formula working, alternatives and
 // sub-recipes, so no page is a bare answer. Later batches widen the
@@ -99,11 +102,12 @@ function buildManifest(): PairPageEntry[] {
     if (pa && pb) add(pa, pb, "gender");
   }
 
-  // 2. Easiest pairs for high-value children.
+  // 2. Easiest pairs for high-value children (batch 1: rarity >= 9 or a
+  // unique-combo result; batch 2 widened the floor to rarity >= 7).
   const uniqueChildren = new Set(Object.values(UNIQUE_COMBOS));
   const producers = producersByChild();
   for (const pal of PALS) {
-    if (!uniqueChildren.has(pal.name) && pal.rarity < 9) continue;
+    if (!uniqueChildren.has(pal.name) && pal.rarity < 7) continue;
     const pairs = producers.get(pal.name) ?? [];
     let added = 0;
     for (const { a, b } of pairs) {
